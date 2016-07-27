@@ -61,100 +61,7 @@ Read More:
 */
 
 @import url("http://www.google.com/fonts/specimen/Francois+One");
-
-/*Keira Edits Begin091115
-div#home-subscribe-box {
-    background: #fff url(/assets/subscribe/red-glasses-cloud-background.png) bottom no-repeat;
-    min-height: 548px;
-    font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 1.4em;
-    line-height: 1.3em;
-}
-
-#home-subscribe-box img {
-    -webkit-border-radius: 0px;
-	-moz-border-radius: 0px;
-	border-radius: 0;
-}
-.home-subscribe-subhed-line1 {
-    text-align: center;
-    font-weight: 600;
-    font-size: 26px;
-	margin-top:10px;
-}
-.home-subscribe-subhed-line2 {
-    text-align: center;
-    font-weight: 600;
-    font-size: 21px;
-}
-.home-subscribe-intro {
-    width: 77%;
-    float: right;
-    margin-top: 40px;
-    font-weight: 600;
-    padding-right: 15px;
-}
-.home-subscribe-outro {
-    width: 50%;
-    float: left;
-    margin-left: 320px;
-    line-height: 1.6em;
-}
-Keira Edits End 091115 */
-
-div#home-subscribe-box {
-    background: #fff url(/assets/subscribe/subscribe-home-leadbox-v2.png) bottom no-repeat;
-    min-height: 548px;
-    font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 1.4em;
-    line-height: 1.3em;
-}
-
-div#home-subscribe-box a {
-    position: absolute;
-    top: 0px;
-    left: 20px;
-    background-color: transparent;
-    border: none;
-}
-
-#home-subscribe-box img {
-    -webkit-border-radius: 0px;
-	-moz-border-radius: 0px;
-	border-radius: 0;
-}
-.home-subscribe-subhed-line1 {
-    text-align: center;
-    font-weight: 600;
-    font-size: 26px;
-    margin-top:10px;
-    display:none;
-}
-
-.home-subscribe-subhed-line2 {
-    text-align: center;
-    font-weight: 600;
-    font-size: 21px;
-    display:none;
-}
-
-.home-subscribe-intro {
-    width: 77%;
-    float: right;
-    margin-top: 40px;
-    font-weight: 600;
-    padding-right: 15px;
-    display:none;
-}
-
-.home-subscribe-outro {
-    width: 50%;
-    float: left;
-    margin-left: 320px;
-    line-height: 1.6em;
-    display:none;
-}
-
+@import url("http://www.google.com/fonts/specimen/Open+Sans");
 
 body {
 	-moz-font-smoothing: antialiased;
@@ -187,9 +94,10 @@ background-color: #ffffff;
 border: 0;
 border-radius: 4px;
 clear: both;
-margin: 20px 0 20px 0;
+margin: 20px auto 20px auto;
 padding: 0 0 20px 0;
 position: relative;
+max-width:1120px;
 }
 
 .main-nav {
@@ -259,9 +167,6 @@ h2.pagetitle {
 	color: #666;
 }
 
-#mobilemailistplug{
-display:none;
-}
 
 #sidebar ul li h2 {
 	color: #999;
@@ -428,42 +333,6 @@ border: 2px solid #ccc;
 border-radius: 6px;
 }
 
-
-#mailistplug {
-width: 100%;
-/*background: #fff url(/assets/successfulfreelancer_bkg.jpg) no-repeat bottom right;*/
-}
-
-div#mailistplug a {
-    text-decoration: none;
-    color: inherit;
-height: 547px;
-}
-
-#mailistplug_header {
-clear: both;
-padding: 10px 5px;
-color: white;
-background-color: red;
-font-size: 2.2em;
-line-height: 1.3em;
-/* font-weight: bolder; */
-font-family: 'Francois One', Arial, sans-serif;
-text-shadow: 0 3px 0 #990000;
-letter-spacing: .001em;
-}
-
-#mailistplug_text {
-font-family: 'Lato', Arial, sans-serif;
-font-size: 1.2em;
-width: 70%;
-}
-
-#mailistplug_text p {
-margin-top: 12px;
-margin-bottom: 6px;
-}
-
 #succesfulfreelancer{
 float:right;
 }
@@ -508,9 +377,32 @@ height:185px;
 /* =HOMEPAGE SQUEEZE
 
 -------------------------------------------------------------- */
-#mailistplug_text {
-font-family: 'Lato', Arial, sans-serif;
-font-size: 1.2em;
+
+div#mailistplug {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.maillistplug-header h2{
+    color: #000;
+    font-family: 'Open Sans',Arial,Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 42px;
+    text-align: center;
+}
+
+.maillistplug-header h2 span {
+    color: #f14d31;
+}
+
+.mailistplug-button {
+    text-align: center;
+}
+
+.main.rave {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 
@@ -908,101 +800,6 @@ body.home .col-620 { /*KD Edit 10-12-15*/
 		background: url('/wp-content/themes/responsive/core/images/select-icons.png') 0 -46px no-repeat;
 	}
 
-/*Set the background */
-
-#mailistplug {
-    width: 100%;
-    background: #fff url(/assets/subscribe/red-glasses-cloud-background-800px.png) no-repeat;
-    /*min-height: 1016px;
-    background-size: cover;*/
-}
-
-.maillistplug-bluebar{
-height: 180px;
-}
-
-p.maillistplug-bluebar-title {
-    font-family: 'Francois One',Arial,Helvetica, sans-serif;
-    text-transform: uppercase;
-    color: white;
-    font-size: 90px;
-    margin: 0 0 0 141px;
-    padding: 35px 0 0 0;
-}
-
-p.maillistplug-bluebar-subtitle {
-    font-family: 'Francois One',Arial,Helvetica, sans-serif;
-    color: white;
-    font-size: 41px;
-    padding: 44px 0 0 0;
-    margin: 0px 0 0 105px;
-    text-align: center;
-    line-height: 35px;
-}
-
-.mailistplug-cloud {
-    height: 152px;
-    font-family: 'Open Sans',Arial,Helvetica, sans-serif;
-    color: inherit;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 0 0 0 0;
-}
-
-.mailistplug-cloud-subhed-line1 {
-    text-align: center;
-    font-weight: 600;
-    font-size: 30px;
-    padding: 10px 0 0 0;
-    width: 600px;
-    margin: 0 0 0 122px;
-    line-height: 30px;
-}
-
-.mailistplug-cloud-subhed-line2 {
-    text-align: center;
-    font-weight: 600;
-    font-size: 22px;
-    margin: 10px 0 0 60px;
-}
-
-a.mailistplug-leadpagebuttton img {
-    margin: 12px 0 0 275px;
-    padding: 0px 0 0 0;
-    width: 500px;
-}
-
-p.mailistplug-subscount {
-    margin: 10px 0 0 305px;
-    padding: 0;
-    color: #009999;
-    font-weight: 600;
-    font-family: 'Open Sans',Arial,Helvetica, sans-serif;
-    font-size: 24px;
-    font-style: italic;
-}
-
-p.mailistplug-intro {
-    width: 466px;
-    margin: 65px 0 0 318px;
-    padding-right: 15px;
-    font-size: 22px;
-    line-height: 24px;
-}
-
-p.mailistplug-outro {
-    margin: 160px 0 0 30px;
-    padding: 0 0 0 0;
-    width: 460px;
-    font-size: 22px;
-    line-height: 24px;
-}
-
-img.mailistplug-bookcover {
-    padding: 0 0 0 0;
-    margin: -255px 0 19px 561px;
-    width: 220px;
-}
 
 }
 
