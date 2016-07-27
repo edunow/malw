@@ -6,7 +6,7 @@ Template:responsive
 
 Theme URI: http://cyberchimps.com/responsive-theme/
 
-Description: Responsive Theme is a flexible foundation with fluid grid system that adapts your website to mobile devices and the desktop or any other viewing environment. Theme features 9 Page Templates, 11 Widget Areas, 6 Template Layouts, 4 Menu Positions and more. Powerful but simple Theme Options for full CMS control with easy Logo Upload, Social Networking and Webmaster Tools etc. Responsive is WooCommerce Compatible, Multilingual Ready (WPML), RTL-Language Support, Retina-Ready, Search Engine Friendly, W3C Markup Validated and currently translated into 45 languages. Cross-Browser compatible. <a href="http://cyberchimps.com/forum/free/responsive/">Official support forum</a> (http://cyberchimps.com/forum/free/responsive/)
+Description: Responsive Theme is a flexible foundation with fluid grid system that adapts your website to mobile devices and the desktop or any other viewing environment. Theme features 9 Page Templates, 11 Widget Areas, 6 Template Layouts, 4 Menu Positions and more. wPowerful but simple Theme Options for full CMS control with easy Logo Upload, Social Networking and Webmaster Tools etc. Responsive is WooCommerce Compatible, Multilingual Ready (WPML), RTL-Language Support, Retina-Ready, Search Engine Friendly, W3C Markup Validated and currently translated into 45 languages. Cross-Browser compatible. <a href="http://cyberchimps.com/forum/free/responsive/">Official support forum</a> (http://cyberchimps.com/forum/free/responsive/)
 
 Author: CyberChimps.com
 
@@ -94,7 +94,7 @@ background-color: #ffffff;
 border: 0;
 border-radius: 4px;
 clear: both;
-margin: 20px auto 20px auto;
+margin: 0 auto;
 padding: 0 0 20px 0;
 position: relative;
 max-width:1120px;
@@ -823,9 +823,7 @@ blockquote { /*KD Edit 10-12-15*/
     padding-top: 20px;
 }
 
-#mailistplug{
-display:none;
-}
+
 
 #mobilemailistplug{
 display:block;
@@ -845,15 +843,6 @@ max-width: 100%;
 media only screen and (max-width : 600px) {
 /* Styles */
 
-#mailistplug{
-display:none;
-}
-
-#mobilemailistplug{
-display:block;
-text-align:center;
-/*margin-top: -75px;*/
-}
 	
 #responsive_current_menu_item {
 	display: none;
@@ -874,18 +863,10 @@ display:block;
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
 /* Styles */
-#mailistplug{
-display:none;
-}
-
-#mobilemailistplug{
-display:block;
-text-align:center;
-}
 
 
 	#header {
-	margin: 0 auto 70px auto;
+	margin: 0 auto;
 	background-color: #fff;
 	max-width: 1120px;
 	padding: 0;
@@ -942,14 +923,6 @@ display:none;
 and (max-width : 321px) {
 /* Styles */
 
-#mobilemailistplug{
-display:block;
-text-align:center;
-}
-
-#mailistplug{
-display:none;
-}
 
 .testimonial {
 padding: 20px 1em;
@@ -978,13 +951,6 @@ display:none;
 and (max-width : 320px) {
 /* Styles */
 
-#mobilemailistplug{
-display:none;
-}
-
-#mailistplug{
-display:block;
-}
 	
 #responsive_current_menu_item {
 	display: none;
@@ -1014,14 +980,7 @@ display:block;
 @media only screen 
 and (max-height : 320px) {
 /* Styles */
-#mailistplug{
-display:none;
-}
 
-#mobilemailistplug{
-display:block;
-text-align:center;
-}
 #responsive_current_menu_item {
 	display: none;
 }
@@ -1057,13 +1016,6 @@ display:none;
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) {
 /* Styles */
-#mobilemailistplug{
-display:none;
-}
-
-#mailistplug{
-display:block;
-}
 
 
 #responsive_current_menu_item {
@@ -1086,101 +1038,6 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px) 
 and (orientation : landscape) {
 /* Styles */
-#mobilemailistplug{
-display:none;
-}
-
-#mailistplug {
-    width: 100%;
-    background: #fff url(/assets/subscribe/red-glasses-cloud-background-1024px.png) no-repeat;
-    min-height: 1300px;
-    background-size: cover;
-}
-
-.maillistplug-bluebar{
-height: 230px;
-}
-
-p.maillistplug-bluebar-title {
-    font-family: 'Francois One',Arial,Helvetica, sans-serif;
-    text-transform: uppercase;
-    color: white;
-    font-size: 90px;
-    margin: 0 0 0 141px;
-    padding: 44px 0 0 0;
-}
-
-p.maillistplug-bluebar-subtitle {
-    font-family: 'Francois One',Arial,Helvetica, sans-serif;
-    color: white;
-    font-size: 41px;
-    padding: 69px 0 0 0;
-    margin: 0px 0 0 105px;
-    text-align: center;
-    line-height: 35px;
-}
-
-.mailistplug-cloud {
-    height: 242px;
-    font-family: 'Open Sans',Arial,Helvetica, sans-serif;
-    color: inherit;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 0 0 0 0;
-}
-
-.mailistplug-cloud-subhed-line1 {
-    text-align: center;
-    font-weight: 600;
-    font-size: 30px;
-    padding: 16px 0 0 0;
-    width: 600px;
-    margin: 0 0 0 122px;
-}
-
-.mailistplug-cloud-subhed-line2 {
-    text-align: center;
-    font-weight: 400;
-    font-size: 22px;
-    margin: 35px 0 0 60px;
-}
-
-a.mailistplug-leadpagebuttton img {
-    margin: 12px 0 0 320px;
-    padding: 0px 0 0 0;
-    width: 460px;
-}
-
-p.mailistplug-subscount {
-    margin: 4px 0 0 335px;
-    padding: 0;
-    color: #009999;
-    font-weight: 600;
-    font-family: 'Open Sans',Arial,Helvetica, sans-serif;
-    font-size: 24px;
-}
-
-p.mailistplug-intro {
-    width: 376px;
-    margin: 65px 0 0 414px;
-    font-weight: 600;
-    padding-right: 15px;
-    font-size: 22px;
-    line-height: 24px;
-}
-
-p.mailistplug-outro {
-    margin: 130px 0 0 30px;
-    padding: 0 0 0 0;
-    width: 416px;
-}
-
-img.mailistplug-bookcover {
-    padding: 0 0 0 0;
-    margin: -114px 15px 0 0;
-    float: right;
-    width: 220px;
-}
 
 #responsive_current_menu_item {
 display: none;
@@ -1202,14 +1059,6 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px) 
 and (orientation : portrait) {
 /* Styles */
-
-#mailistplug{
-display:block;
-}
-
-#mobilemailistplug{
-display:none;
-}
 
 
 #menu_container {
@@ -1239,14 +1088,6 @@ display:block;
 and (min-width : 1224px) {
 /* Styles */
 
-#mobilemailistplug{
-display:none;
-}
-
-#mailistplug{
-display:block;
-}
-
 #mobilelogo{
 display:none;
 }
@@ -1261,14 +1102,6 @@ display:block;
 @media only screen 
 and (min-width : 1824px) {
 /* Styles */
-
-#mobilemailistplug{
-display:none;
-}
-
-#mailistplug{
-display:block;
-}
 
 #mobilelogo{
 display:none;
@@ -1290,14 +1123,6 @@ only screen and (min-device-pixel-ratio : 1.5) {
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
 /* Styles */
-#mailistplug{
-display:none;
-}
-
-#mobilemailistplug{
-display:block;
-text-align:center;
-}
 
 
 	#menu_container {
@@ -1340,14 +1165,6 @@ and (min-width : 321px) {
 and (max-width : 320px) {
 /* Styles */
 
-#mobilemailistplug{
-display:block;
-}
-
-#mailistplug{
-display:none;
-}
-
 
 #mobilelogo{
 display:block;
@@ -1371,15 +1188,6 @@ max-width: 100%;
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) {
 /* Styles */
-
-#mobilemailistplug{
-display:none;
-}
-
-#mailistplug{
-display:block;
-}
-
 
 
 #menu_container {
@@ -1408,14 +1216,6 @@ and (max-device-width : 1024px)
 and (orientation : landscape) {
 /* Styles */
 
-#mobilemailistplug{
-display:none;
-}
-
-#mailistplug{
-display:block;
-}
-
 #menu_container {
 max-width: 100%;
 margin: 0 auto;
@@ -1442,14 +1242,6 @@ and (max-device-width : 1024px)
 and (orientation : portrait) {
 /* Styles */
 
-#mailistplug{
-display:block;
-}
-
-#mobilemailistplug{
-display:none;
-}
-
 #mobilelogo{
 display:block;
 }
@@ -1464,14 +1256,6 @@ display:none;
 @media only screen 
 and (min-width : 1224px) {
 /* Styles */
-
-#mobilemailistplug{
-display:none;
-}
-
-#mailistplug{
-display:block;
-}
 
 #mobilelogo{
 display:none;
@@ -1488,13 +1272,6 @@ display:block;
 and (min-width : 1824px) {
 /* Styles */
 
-#mailistplug{
-display:block;
-}
-
-#mobilemailistplug{
-display:none;
-}
 
 #mobilelogo{
 display:none;
