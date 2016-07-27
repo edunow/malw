@@ -8,7 +8,7 @@ Theme URI: http://cyberchimps.com/responsive-theme/
 
 Description: Responsive Theme is a flexible foundation with fluid grid system that adapts your website to mobile devices and the desktop or any other viewing environment. Theme features 9 Page Templates, 11 Widget Areas, 6 Template Layouts, 4 Menu Positions and more. wPowerful but simple Theme Options for full CMS control with easy Logo Upload, Social Networking and Webmaster Tools etc. Responsive is WooCommerce Compatible, Multilingual Ready (WPML), RTL-Language Support, Retina-Ready, Search Engine Friendly, W3C Markup Validated and currently translated into 45 languages. Cross-Browser compatible. <a href="http://cyberchimps.com/forum/free/responsive/">Official support forum</a> (http://cyberchimps.com/forum/free/responsive/)
 
-Author: CyberChimps.com
+Author: Gerard Greenidge
 
 Author URI: http://cyberchimps.com
 
@@ -337,14 +337,6 @@ border-radius: 6px;
 float:right;
 }
 
-div.mainrave {
-text-align: center;
-margin-top: 10px;
-font-family: 'Shadows into Light', Arial, sans-serif;
-font-size: 1.7em;
-line-height: 1.5em;
-color: #999999;
-}
 
 /* =Header
 
@@ -379,30 +371,82 @@ height:185px;
 -------------------------------------------------------------- */
 
 div#mailistplug {
-    max-width: 1120px;
-    margin: 0 auto;
+    margin: 0;
+    padding: 0 20px;
+    border-bottom: #ccc 8px solid;
+    background-image: url("/assets/subscribe-video/bkg-gradient.jpg");
+    background-repeat: repeat-x;
+
 }
 
 .maillistplug-header h2{
     color: #000;
-    font-family: 'Open Sans',Arial,Helvetica, sans-serif;
+    font-family: 'Open Sans';
     font-weight: 700;
     font-size: 42px;
     text-align: center;
+    margin-bottom: 25px;
+    margin-top: 20px;
 }
 
 .maillistplug-header h2 span {
     color: #f14d31;
+    font-style: italic;
 }
 
 .mailistplug-button {
     text-align: center;
+    padding: 0;
+    margin: 0;
 }
 
-.main.rave {
+.mailistplug-video {
+    width: 52%;
+    margin-bottom: 25px;}
+
+#mailistplug h3 {
+    font-weight: 600;
+    font-family: 'Open Sans',Arial,Helvetica, sans-serif;
+    font-size:22px;
+}
+
+#mailistplug h3 span {
+    font-weight: 700;
+    font-family: 'Open Sans',Arial,Helvetica, sans-serif;
+    font-size:40px;
+}
+
+h3.mailistplug-subscount {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+h3.maillistplug-whatyouget {
+    line-height: 34px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+p.maillistplug-nosharing {
+    font-family: 'Open Sans',Arial,Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #666666;
+    margin-top:5px;
+}
+
+.mainrave {
     text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
+    color:#cccccc;
+}
+
+.mainrave img {
+    max-width: 20%;
+}
+
+h2.socialproof {
+    color: #cccccc;
+    text-transform: uppercase;
 }
 
 
@@ -625,14 +669,19 @@ max-width:350px;
 
 @media screen and (max-width: 800px) {
 
-	body {
-	}
-
-	#logo {
+#logo {
 		float: none;
 		margin: 0;
 		text-align: center;
 	}
+
+.mailistplug-video {
+    width: initial;
+}
+
+.mainrave img {
+    max-width: 100%;
+}
 
 body.home .col-620 { /*KD Edit 10-12-15*/
     width: 100%;
