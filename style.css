@@ -56,51 +56,13 @@ Read More:
 
 - http://cyberchimps.com/guide-tags/child-theme-2/
 
-STAGE
+STAGE.MAKEALIVINGWRITING.COM
 
 */
 
 @import url("http://www.google.com/fonts/specimen/Francois+One");
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i';
 
-/*Keira Edits Begin091115 */
-div#home-subscribe-box {
-    background: #fff url(/assets/subscribe/red-glasses-cloud-background.png) bottom no-repeat;
-    min-height: 548px;
-    font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 1.4em;
-    line-height: 1.3em;
-}
-
-#home-subscribe-box img {
-    -webkit-border-radius: 0px;
-	-moz-border-radius: 0px;
-	border-radius: 0;
-}
-.home-subscribe-subhed-line1 {
-    text-align: center;
-    font-weight: 600;
-    font-size: 26px;
-	margin-top:10px;
-}
-.home-subscribe-subhed-line2 {
-    text-align: center;
-    font-weight: 600;
-    font-size: 21px;
-}
-.home-subscribe-intro {
-    width: 77%;
-    float: right;
-    margin-top: 40px;
-    font-weight: 600;
-    padding-right: 15px;
-}
-.home-subscribe-outro {
-    width: 50%;
-    float: left;
-    margin-left: 320px;
-    line-height: 1.6em;
-}
-/*Keira Edits End 091115 */
 
 body {
 	-moz-font-smoothing: antialiased;
@@ -396,56 +358,8 @@ border-radius: 6px;*/
 }
 
 
-#mailistplug {
-width: 100%;
-}
-
-#mailistplug_header {
-clear: both;
-padding: 10px 5px;
-color: white;
-background-color: red;
-font-size: 2.2em;
-line-height: 1.3em;
-/* font-weight: bolder; */
-font-family: 'Francois One', Arial, sans-serif;
-text-shadow: 0 3px 0 #990000;
-letter-spacing: .001em;
-}
-
-#mailistplug_text {
-font-family: 'Lato', Arial, sans-serif;
-font-size: 1.2em;
-width: 70%;
-}
-
-#mailistplug_text p {
-margin-top: 12px;
-margin-bottom: 6px;
-}
-
-.mailistplug-subscount {
-    margin: 0 auto 26px auto;
-    padding: 0;
-    width: 460px;
-    color: #037F7C;
-    font-weight: 600;
-    font-family: 'Open Sans',Arial,Helvetica, sans-serif;
-    font-size: 24px;
-    font-style: italic;
-}
-
 #succesfulfreelancer{
 float:right;
-}
-
-div.mainrave {
-text-align: center;
-margin-top: 10px;
-font-family: 'Shadows into Light', Arial, sans-serif;
-font-size: 1.7em;
-line-height: 1.5em;
-color: #999999;
 }
 
 /* =Header
@@ -479,9 +393,87 @@ height:185px;
 /* =HOMEPAGE SQUEEZE
 
 -------------------------------------------------------------- */
-#mailistplug_text {
-font-family: 'Lato', Arial, sans-serif;
-font-size: 1.2em;
+
+div#mailistplug {
+    margin: 0;
+    padding: 0 20px;
+    border-bottom: #ccc 8px solid;
+    background-image: url("/assets/subscribe-video/bkg-gradient.jpg");
+    background-repeat: repeat-x;
+    background-position: right bottom;
+}
+
+.maillistplug-header h2{
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 42px;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    letter-spacing: -1.75px;
+}
+
+.maillistplug-header h2 span {
+    color: #f14d31;
+    font-style: italic;
+}
+
+.mailistplug-button {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.mailistplug-video {
+    width: 52%;
+    margin-bottom: 25px;}
+
+#mailistplug h3 {
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    font-size:22px;
+}
+
+#mailistplug h3 span {
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    font-size:40px;
+}
+
+h3.mailistplug-subscount {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+h3.maillistplug-whatyouget {
+    line-height: 34px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+p.maillistplug-nosharing {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #666666;
+    margin-top:5px;
+}
+
+.mainrave {
+    text-align: center;
+    color:#cccccc;
+}
+
+.mainrave img {
+    max-width: 20%;
+}
+
+h2.socialproof {
+    color: #cccccc;
+    text-transform: uppercase;
+    font-family: 'Open Sans';
+    font-weight: 400;
 }
 
 
@@ -875,101 +867,6 @@ body.home .col-620 { /*KD Edit 10-12-15*/
 		background: url('/wp-content/themes/responsive/core/images/select-icons.png') 0 -46px no-repeat;
 	}
 
-/*Set the background */
-
-#mailistplug {
-    width: 100%;
-    background: #fff url(/assets/subscribe/red-glasses-cloud-background-1024px.png) no-repeat;
-    /*min-height: 1016px;
-    background-size: cover;*/
-}
-
-.maillistplug-bluebar{
-height: 180px;
-}
-
-p.maillistplug-bluebar-title {
-    font-family: 'Francois One',Arial,Helvetica, sans-serif;
-    text-transform: uppercase;
-    color: white;
-    font-size: 90px;
-    margin: 0 0 0 141px;
-    padding: 35px 0 0 0;
-}
-
-p.maillistplug-bluebar-subtitle {
-    font-family: 'Francois One',Arial,Helvetica, sans-serif;
-    color: white;
-    font-size: 41px;
-    padding: 44px 0 0 0;
-    margin: 0px 0 0 105px;
-    text-align: center;
-    line-height: 35px;
-}
-
-.mailistplug-cloud {
-    height: 152px;
-    font-family: 'Open Sans',Arial,Helvetica, sans-serif;
-    color: inherit;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 0 0 0 0;
-}
-
-.mailistplug-cloud-subhed-line1 {
-    text-align: center;
-    font-weight: 600;
-    font-size: 30px;
-    padding: 10px 0 0 0;
-    width: 600px;
-    margin: 0 0 0 122px;
-    line-height: 30px;
-}
-
-.mailistplug-cloud-subhed-line2 {
-    text-align: center;
-    font-weight: 600;
-    font-size: 22px;
-    margin: 10px 0 0 60px;
-}
-
-a.mailistplug-leadpagebuttton img {
-    margin: 12px 0 0 275px;
-    padding: 0px 0 0 0;
-    width: 500px;
-}
-
-.mailistplug-subscount {
-    margin: 10px 0 0 305px;
-    padding: 0;
-    color: #009999;
-    font-weight: 600;
-    font-family: 'Open Sans',Arial,Helvetica, sans-serif;
-    font-size: 24px;
-    font-style: italic;
-}
-
-p.mailistplug-intro {
-    width: 466px;
-    margin: 65px 0 0 318px;
-    padding-right: 15px;
-    font-size: 22px;
-    line-height: 24px;
-}
-
-p.mailistplug-outro {
-    margin: 160px 0 0 30px;
-    padding: 0 0 0 0;
-    width: 460px;
-    font-size: 22px;
-    line-height: 24px;
-}
-
-img.mailistplug-bookcover {
-    padding: 0 0 0 0;
-    margin: -255px 0 19px 561px;
-    width: 220px;
-}
 
 }
 
@@ -998,30 +895,6 @@ body.home .col-620 { /*KD Edit 10-12-15*/
     width: 100%;
 }
 
-div#home-subscribe-box {
-    background: #fff url(/assets/subscribe/red-glasses-cloud-background.png) bottom no-repeat;
-    min-height: 548px;
-    font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 1.4em;
-    line-height: 1.3em;
-    background-size: contain;
-}
-
-.home-subscribe-intro {
-    width: 98%;
-    float: right;
-    margin-top: 12px;
-    font-weight: 600;
-    padding-right: 0px;
-}
-
-.home-subscribe-outro {
-    width: 54%;
-    float: left;
-    margin-left: 200px;
-    line-height: 1.6em;
-    margin-top: 35px;
-}
 	.grid,
 	.grid-right {
 		float: none;
@@ -1195,15 +1068,6 @@ blockquote { /*KD Edit 10-12-15*/
     padding-top: 20px;
 }
 
-#mailistplug{
-display:none;
-}
-
-#mobilemailistplug{
-display:block;
-text-align:center;
-/*margin-top: -75px;*/
-}
 
 .post-count-container {
 clear: both;
@@ -1217,15 +1081,6 @@ max-width: 100%;
 media only screen and (max-width : 600px) {
 /* Styles */
 
-#mailistplug{
-display:none;
-}
-
-#mobilemailistplug{
-display:block;
-text-align:center;
-/*margin-top: -75px;*/
-}
 	
 #responsive_current_menu_item {
 	display: none;
@@ -1246,15 +1101,6 @@ display:block;
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
 /* Styles */
-#mailistplug{
-display:none;
-}
-
-#mobilemailistplug{
-display:block;
-text-align:center;
-}
-
 
 	#header {
 	margin: 0 auto;
@@ -1314,15 +1160,6 @@ display:none;
 and (max-width : 321px) {
 /* Styles */
 
-#mobilemailistplug{
-display:block;
-text-align:center;
-}
-
-#mailistplug{
-display:none;
-}
-
 .testimonial {
 padding: 20px 1em;
 /* padding-left: 70px; */
@@ -1349,14 +1186,6 @@ display:none;
 @media only screen 
 and (max-width : 320px) {
 /* Styles */
-
-#mobilemailistplug{
-display:none;
-}
-
-#mailistplug{
-display:block;
-}
 	
 #responsive_current_menu_item {
 	display: none;
@@ -1386,14 +1215,7 @@ display:block;
 @media only screen 
 and (max-height : 320px) {
 /* Styles */
-#mailistplug{
-display:none;
-}
 
-#mobilemailistplug{
-display:block;
-text-align:center;
-}
 #responsive_current_menu_item {
 	display: none;
 }
@@ -1429,13 +1251,6 @@ display:none;
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) {
 /* Styles */
-#mobilemailistplug{
-display:none;
-}
-
-#mailistplug{
-display:block;
-}
 
 
 #responsive_current_menu_item {
@@ -1458,13 +1273,6 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px) 
 and (orientation : landscape) {
 /* Styles */
-#mobilemailistplug{
-display:none;
-}
-
-#mailistplug{
-display:block;
-}
 
 #responsive_current_menu_item {
 display: none;
@@ -1486,14 +1294,6 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px) 
 and (orientation : portrait) {
 /* Styles */
-
-#mailistplug{
-display:block;
-}
-
-#mobilemailistplug{
-display:none;
-}
 
 
 #menu_container {
@@ -1523,14 +1323,6 @@ display:block;
 and (min-width : 1224px) {
 /* Styles */
 
-#mobilemailistplug{
-display:none;
-}
-
-#mailistplug{
-display:block;
-}
-
 #mobilelogo{
 display:none;
 }
@@ -1545,14 +1337,6 @@ display:block;
 @media only screen 
 and (min-width : 1824px) {
 /* Styles */
-
-#mobilemailistplug{
-display:none;
-}
-
-#mailistplug{
-display:block;
-}
 
 #mobilelogo{
 display:none;
@@ -1574,15 +1358,6 @@ only screen and (min-device-pixel-ratio : 1.5) {
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
 /* Styles */
-#mailistplug{
-display:none;
-}
-
-#mobilemailistplug{
-display:block;
-text-align:center;
-}
-
 
 	#menu_container {
 	max-width: 100%;
@@ -1624,14 +1399,6 @@ and (min-width : 321px) {
 and (max-width : 320px) {
 /* Styles */
 
-#mobilemailistplug{
-display:block;
-}
-
-#mailistplug{
-display:none;
-}
-
 
 #mobilelogo{
 display:block;
@@ -1660,16 +1427,6 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px) {
 /* Styles */
 
-#mobilemailistplug{
-display:none;
-}
-
-#mailistplug{
-display:block;
-}
-
-
-
 #menu_container {
 max-width: 100%;
 margin: 0 auto;
@@ -1695,14 +1452,6 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px) 
 and (orientation : landscape) {
 /* Styles */
-
-#mobilemailistplug{
-display:none;
-}
-
-#mailistplug{
-display:block;
-}
 
 #menu_container {
 max-width: 100%;
@@ -1730,14 +1479,6 @@ and (max-device-width : 1024px)
 and (orientation : portrait) {
 /* Styles */
 
-#mailistplug{
-display:block;
-}
-
-#mobilemailistplug{
-display:none;
-}
-
 #mobilelogo{
 display:block;
 }
@@ -1753,14 +1494,6 @@ display:none;
 and (min-width : 1224px) {
 /* Styles */
 
-#mobilemailistplug{
-display:none;
-}
-
-#mailistplug{
-display:block;
-}
-
 #mobilelogo{
 display:none;
 }
@@ -1775,14 +1508,6 @@ display:block;
 @media only screen 
 and (min-width : 1824px) {
 /* Styles */
-
-#mailistplug{
-display:block;
-}
-
-#mobilemailistplug{
-display:none;
-}
 
 #mobilelogo{
 display:none;
