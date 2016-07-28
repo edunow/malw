@@ -1,6 +1,7 @@
 /*
 
 Theme Name: Responsive-Child
+
 Template:responsive
 
 Theme URI: http://cyberchimps.com/responsive-theme/
@@ -55,7 +56,7 @@ Read More:
 
 - http://cyberchimps.com/guide-tags/child-theme-2/
 
-
+STAGE
 
 */
 
@@ -1798,6 +1799,7 @@ display:block;
 only screen and (-webkit-min-device-pixel-ratio : 1.5),
 only screen and (min-device-pixel-ratio : 1.5) {
 /* Styles */
+
 
 }
 
