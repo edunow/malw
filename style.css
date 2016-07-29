@@ -3,17 +3,17 @@
 
 Theme Name: Responsive-Child
 
-Template:responsive
+Template: responsive
 
 Theme URI: http://cyberchimps.com/responsive-theme/
 
-Description: Responsive Theme is a flexible foundation with fluid grid system that adapts your website to mobile devices and the desktop or any other viewing environment. Theme features 9 Page Templates, 11 Widget Areas, 6 Template Layouts, 4 Menu Positions and more. wPowerful but simple Theme Options for full CMS control with easy Logo Upload, Social Networking and Webmaster Tools etc. Responsive is WooCommerce Compatible, Multilingual Ready (WPML), RTL-Language Support, Retina-Ready, Search Engine Friendly, W3C Markup Validated and currently translated into 45 languages. Cross-Browser compatible. <a href="http://cyberchimps.com/forum/free/responsive/">Official support forum</a> (http://cyberchimps.com/forum/free/responsive/)
+Description: Responsive Theme is a flexible foundation with fluid grid system that adapts your website to mobile devices and the desktop or any other viewing environment. Theme features 9 Page Templates, 11 Widget Areas, 6 Template Layouts, 4 Menu Positions and more. Powerful but simple Theme Options for full CMS control with easy Logo Upload, Social Networking and Webmaster Tools etc. Responsive is WooCommerce Compatible, Multilingual Ready (WPML), RTL-Language Support, Retina-Ready, Search Engine Friendly, W3C Markup Validated and currently translated into 45 languages. Cross-Browser compatible. <a href="http://cyberchimps.com/forum/free/responsive/">Official support forum</a> (http://cyberchimps.com/forum/free/responsive/)
 
 Customized By: Gerard Greenidge and Keira Dooley
 
 Customizer URI: http://www.edunow.com and http://www.designbydooley.com
 
-Version: 3
+Custom Version: 3
 
 Tags: white, black, gray, light, custom-menu, custom-header, custom-background, one-column, two-columns, left-sidebar, right-sidebar, theme-options, threaded-comments, full-width-template, sticky-post, translation-ready, rtl-language-support, responsive-layout, fluid-layout
 
@@ -23,7 +23,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Text Domain: responsive
 
-DEV.MAKEALIVINGWRITING.COM
+WWW.MAKEALIVINGWRITING.COM
 
 Responsive WordPress Theme, Copyright (C) 2003-2014 Emil Uzelac, CyberChimps Inc
 
@@ -76,12 +76,6 @@ body {
 	text-rendering: optimizeLegibility;
 }
 
-#container {
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
 .skip-container {
 display: block;
 padding: 0;
@@ -95,16 +89,9 @@ background-color: #ffffff;
 border: 0;
 border-radius: 4px;
 clear: both;
-margin: 0 auto;
-padding: 0 0 20px 0;
+margin: 20px auto 20px auto;
+padding: 0 0px 20px 0;
 position: relative;
-max-width:1120px;
-}
-
-.main-nav {
-    clear: both;
-    background-color: black;
-    padding:0 75px;
 }
 
 #content {
@@ -112,19 +99,20 @@ margin-top: 40px;
 margin-bottom: 20px;
 margin-left: 80px;
 }
+
+.home #content-blog {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
 .col-620 {
 width: 57%;
 }
 
 body.home .col-620 { /*KD 10-12-15*/
-    width: 65%;
+    width: 60%;
 }
-
-div.hentry {
-    margin: 0;
-    padding: 0 20px;
-}
-
 
 p, hr, dl, pre, form, table, address, blockquote {
 margin: 1.2em 0;
@@ -168,7 +156,6 @@ h2.pagetitle {
 	color: #666;
 }
 
-
 #sidebar ul li h2 {
 	color: #999;
 	border-bottom: 3px solid #eee;
@@ -211,6 +198,80 @@ h3 {
 
 h4 {
 	font-size: 1.100em;
+}
+
+/**** Block Quote ****/
+
+blockquote{
+	padding: 0 1em;
+	padding-left: 70px;
+	background: transparent url(/assets/quote_bkg.jpg) no-repeat;
+	background-color: #f1f1f1;
+	border-left:none;
+	}
+	
+	blockquote p {
+    font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    line-height: 1.3em;
+    font-style: italic;
+    color: #888;
+}
+
+blockquote img, #content blockquote img {
+    border-radius: 120px;
+    width: 120px;
+	border: 5px solid #fff;
+}
+blockquote img.normalimage, #content blockquote img.normalimage {
+	border-radius: 6px;
+	 width: auto;
+	 border: 0;
+}
+	
+	/*CLICK TO TWEET*/
+	
+	.clicktweetbox {
+    background: #f2f2f2;
+    clear: both;
+    min-height: 135px;
+    padding: 25px 20px;
+}
+
+.clicktweetbox a {
+    color: #111;
+    text-decoration: none;
+	font-size: 1.1em;
+}
+
+.clicktweetbox a:hover {
+    text-decoration: underline;
+}
+
+.clicktweetbox img {
+    border-radius: 120px;
+    max-width: 120px;
+}
+
+.clicktweetbox-button a {
+    border: 2px solid #55acee;
+    border-radius: 25px;
+    color: #55acee;
+    background: url('http://www.makealivingwriting.com/wp-content/uploads/tweetthisbkg.png')no-repeat left;
+    background-position-x: 3px;
+    padding: 7px 7px 7px 39px;
+    text-decoration: none;
+	font-size: 1em;
+}
+.clicktweetbox-button a:hover {
+    background: #55acee url('http://www.makealivingwriting.com/wp-content/uploads/tweetthisbkg-hover.png')no-repeat left;
+    color: #fff;
+	text-decoration: none;
+}
+
+
+.page-id-8565 h1, .page-id-8603 h1 { /*July 4 Sale*/
+display: none;
 }
 
 
@@ -299,40 +360,28 @@ color: #ffcc33;
 padding-bottom:17px;
 }
 
-blockquote{
-	padding: 0 1em;
-	padding-left: 70px;
-	background: transparent url(/assets/quote_bkg.jpg) no-repeat;
-	background-color: #f1f1f1;
-	border-left:none;
-	-webkit-border-radius: 6px;
-	-moz-border-radius: 6px;
-	border-radius:6px;
-	}
-	
+#container{
+	max-width:1120px;
+        padding:0;
+}
+
+
 .graybox {
-clear: both;
-padding: .25em 1.5em;
-background: #f1f1f1;
-border-left: none;
--webkit-border-radius: 6px;
--moz-border-radius: 6px;
-border-radius: 6px;
-min-height: 175px;
-margin-bottom: 15px;
+   clear: both;
+   padding: .25em 1.5em;
+   background: #f1f1f1;
+   border-left: none;
+   min-height: 175px;
+   margin-bottom: 15px;
 }
 
 .graybox img {
-border: 2px solid #ccc;
--webkit-border-radius: 6px;
--moz-border-radius: 6px;
-border-radius: 6px;
+   border: 2px solid #ccc;
 }
 
 #succesfulfreelancer{
-float:right;
+   float:right;
 }
-
 
 /* =Header
 
@@ -536,7 +585,6 @@ color: #444;
 
 div.graylinebox {
 border: 2px solid #f2f2f2;
-border-radius: 8px;
 padding: 10px 20px;
 margin-bottom: 15px;
 clear:both;
@@ -544,7 +592,6 @@ clear:both;
 
 div.graylinebox250 {
 border: 2px solid #f2f2f2;
-border-radius: 8px;
 padding: 10px 20px;
 margin-bottom: 15px;
 min-height:250px;
@@ -553,7 +600,6 @@ clear:both;
 
 div.graylinebox330 {
 border: 2px solid #f2f2f2;
-border-radius: 8px;
 padding: 10px 20px;
 margin-bottom: 15px;
 min-height:330px;
@@ -599,24 +645,23 @@ display: none;
 -------------------------------------------------------------- */
 
 div#mc_embed_signup {
-border-radius:10px;
-font-size: 1.1em;
+   font-size: 1.1em;
 }
 
 div.indicates-required {
-text-align: right;
-font-style: italic;
-font-size: .75em;
+   text-align: right;
+   font-style: italic;
+   font-size: .75em;
 }
 
 #mc_embed_signup h2 {
-font-size: 2.1em;
-text-transform: uppercase;
+   font-size: 2.1em;
+   text-transform: uppercase;
 }
 
 input#mce-EMAIL, input#mce-FNAME, input#mce-LNAME {
-width: 100%;
-min-height: 50px;
+   width: 100%;
+   min-height: 50px;
 }
 
 
@@ -657,7 +702,10 @@ max-width:350px;
 
 @media screen and (max-width: 800px) {
 
-#logo {
+	body {
+	}
+
+	#logo {
 		float: none;
 		margin: 0;
 		text-align: center;
@@ -672,7 +720,7 @@ max-width:350px;
 }
 
 body.home .col-620 { /*KD Edit 10-12-15*/
-    width: 100%;
+    width: 93%;
 }
 
 #content {  /* KD 10-12-15*/
@@ -720,7 +768,6 @@ body.home .col-620 { /*KD Edit 10-12-15*/
 		clear: both;
 		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#585858, endColorstr=#3d3d3d);
 		margin: 0 auto;
-                padding:0;
 	}
 
 	.js .main-nav .menu {
@@ -840,9 +887,6 @@ body.home .col-620 { /*KD Edit 10-12-15*/
 
 }
 
-
-
-
 @media screen and (max-width: 768px) {
 
 img.alignright, img.alignleft, img.alignnone, a img.alignnone { /*KD Edit 10-12-15*/
@@ -858,13 +902,6 @@ blockquote { /*KD Edit 10-12-15*/
     padding-top: 20px;
 }
 
-
-
-#mobilemailistplug{
-display:block;
-text-align:center;
-}
-
 .post-count-container {
 clear: both;
 text-align: center;
@@ -876,7 +913,6 @@ max-width: 100%;
 
 media only screen and (max-width : 600px) {
 /* Styles */
-
 	
 #responsive_current_menu_item {
 	display: none;
@@ -900,7 +936,7 @@ and (max-device-width : 480px) {
 
 
 	#header {
-	margin: 0 auto;
+	margin: 0 auto 70px auto;
 	background-color: #fff;
 	max-width: 1120px;
 	padding: 0;
@@ -928,9 +964,6 @@ padding: 20px 1em;
 background: transparent url(/assets/quote_bkg.jpg) no-repeat;
 background-color: #f1f1f1;
 border-left: none;
--webkit-border-radius: 6px;
--moz-border-radius: 6px;
-border-radius: 6px;
 }
 
 .post-count-container{
@@ -956,15 +989,11 @@ display:none;
 and (max-width : 321px) {
 /* Styles */
 
-
 .testimonial {
 padding: 20px 1em;
 background: transparent url(/assets/quote_bkg.jpg) no-repeat;
 background-color: #f1f1f1;
 border-left: none;
--webkit-border-radius: 6px;
--moz-border-radius: 6px;
-border-radius: 6px;
 }
 
 #mobilelogo{
@@ -982,7 +1011,6 @@ display:none;
 @media only screen 
 and (max-width : 320px) {
 /* Styles */
-
 	
 #responsive_current_menu_item {
 	display: none;
@@ -993,9 +1021,7 @@ padding: 20px 1em;
 background: transparent url(/assets/quote_bkg.jpg) no-repeat;
 background-color: #f1f1f1;
 border-left: none;
--webkit-border-radius: 6px;
--moz-border-radius: 6px;
-border-radius: 6px;
+
 }
 
 #mobilelogo{
@@ -1022,9 +1048,6 @@ padding: 20px 1em;
 background: transparent url(/assets/quote_bkg.jpg) no-repeat;
 background-color: #f1f1f1;
 border-left: none;
--webkit-border-radius: 6px;
--moz-border-radius: 6px;
-border-radius: 6px;
 }
 
 #mobilelogo{
@@ -1046,7 +1069,6 @@ display:none;
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) {
 /* Styles */
-
 
 #responsive_current_menu_item {
 display: none;
@@ -1089,7 +1111,6 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px) 
 and (orientation : portrait) {
 /* Styles */
-
 
 #menu_container {
 max-width: 100%;
@@ -1148,14 +1169,11 @@ display:block;
 only screen and (-webkit-min-device-pixel-ratio : 1.5),
 only screen and (min-device-pixel-ratio : 1.5) {
 /* Styles */
-}
-
-/* Smartphones (portrait and landscape) ----------- */
+}/* Smartphones (portrait and landscape) ----------- */
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
 /* Styles */
-
 
 	#menu_container {
 	max-width: 100%;
@@ -1197,13 +1215,16 @@ and (min-width : 321px) {
 and (max-width : 320px) {
 /* Styles */
 
-
 #mobilelogo{
 display:block;
 }
 
 #logo{
 display:none;
+}
+
+#wrapper{
+	padding-left:0px;
 }
 
 .post-count-container {
@@ -1220,7 +1241,6 @@ max-width: 100%;
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) {
 /* Styles */
-
 
 #menu_container {
 max-width: 100%;
@@ -1303,7 +1323,6 @@ display:block;
 @media only screen 
 and (min-width : 1824px) {
 /* Styles */
-
 
 #mobilelogo{
 display:none;
