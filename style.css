@@ -2,17 +2,18 @@
 /*
 
 Theme Name: Responsive-Child
+
 Template:responsive
 
 Theme URI: http://cyberchimps.com/responsive-theme/
 
 Description: Responsive Theme is a flexible foundation with fluid grid system that adapts your website to mobile devices and the desktop or any other viewing environment. Theme features 9 Page Templates, 11 Widget Areas, 6 Template Layouts, 4 Menu Positions and more. wPowerful but simple Theme Options for full CMS control with easy Logo Upload, Social Networking and Webmaster Tools etc. Responsive is WooCommerce Compatible, Multilingual Ready (WPML), RTL-Language Support, Retina-Ready, Search Engine Friendly, W3C Markup Validated and currently translated into 45 languages. Cross-Browser compatible. <a href="http://cyberchimps.com/forum/free/responsive/">Official support forum</a> (http://cyberchimps.com/forum/free/responsive/)
 
-Author: Gerard Greenidge
+Customized By: Gerard Greenidge and Keira Dooley
 
-Author URI: http://cyberchimps.com
+Customizer URI: http://www.edunow.com and http://www.designbydooley.com
 
-Version: 1.9.5.4
+Version: 3
 
 Tags: white, black, gray, light, custom-menu, custom-header, custom-background, one-column, two-columns, left-sidebar, right-sidebar, theme-options, threaded-comments, full-width-template, sticky-post, translation-ready, rtl-language-support, responsive-layout, fluid-layout
 
@@ -22,7 +23,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Text Domain: responsive
 
-
+DEV.MAKEALIVINGWRITING.COM
 
 Responsive WordPress Theme, Copyright (C) 2003-2014 Emil Uzelac, CyberChimps Inc
 
@@ -212,11 +213,6 @@ h4 {
 	font-size: 1.100em;
 }
 
-/*img, #content img {
--webkit-border-radius: 6px;
--moz-border-radius: 6px;
-border-radius: 6px;
-}*/
 
 /* =FEAR BUSTER 
 
@@ -343,7 +339,6 @@ float:right;
 -------------------------------------------------------------- */
 
 #logo {
-/* float: left; */
 margin: 0;
 text-align: center;
 width: 100%;
@@ -531,22 +526,12 @@ color: #fff;
 
 /*Posts*/
 
-/*h2 {
-font-size: 2.0em;
-margin-bottom: .75em;
-margin-top: .75em;
-font-family: 'Francois One', Arial, Helvetica, sans-serif;
-letter-spacing: -.02em;
-}*/
-
 .callout {
 font-family:'Lato', Arial, sans-serif;
 font-size: 1.2em;
 line-height: 1.5em;
 font-weight: bold;
 color: #444;
-/*border-left: 10px solid #C12213;
-padding-left: 15px;*/
 }
 
 div.graylinebox {
@@ -864,8 +849,6 @@ img.alignright, img.alignleft, img.alignnone, a img.alignnone { /*KD Edit 10-12-
     float: none;
     display: block;
     margin: auto;
-    /* margin-right: 0; */
-    /* margin-left: 0; */
     margin-bottom: 15px;
 }
 
@@ -880,7 +863,6 @@ blockquote { /*KD Edit 10-12-15*/
 #mobilemailistplug{
 display:block;
 text-align:center;
-/*margin-top: -75px;*/
 }
 
 .post-count-container {
@@ -943,7 +925,6 @@ and (max-device-width : 480px) {
 	
 	.testimonial {
 padding: 20px 1em;
-/* padding-left: 70px; */
 background: transparent url(/assets/quote_bkg.jpg) no-repeat;
 background-color: #f1f1f1;
 border-left: none;
@@ -978,7 +959,6 @@ and (max-width : 321px) {
 
 .testimonial {
 padding: 20px 1em;
-/* padding-left: 70px; */
 background: transparent url(/assets/quote_bkg.jpg) no-repeat;
 background-color: #f1f1f1;
 border-left: none;
@@ -1010,7 +990,6 @@ and (max-width : 320px) {
 
 .testimonial {
 padding: 20px 1em;
-/* padding-left: 70px; */
 background: transparent url(/assets/quote_bkg.jpg) no-repeat;
 background-color: #f1f1f1;
 border-left: none;
@@ -1040,7 +1019,6 @@ and (max-height : 320px) {
 
 .testimonial {
 padding: 20px 1em;
-/* padding-left: 70px; */
 background: transparent url(/assets/quote_bkg.jpg) no-repeat;
 background-color: #f1f1f1;
 border-left: none;
@@ -1170,7 +1148,9 @@ display:block;
 only screen and (-webkit-min-device-pixel-ratio : 1.5),
 only screen and (min-device-pixel-ratio : 1.5) {
 /* Styles */
-}/* Smartphones (portrait and landscape) ----------- */
+}
+
+/* Smartphones (portrait and landscape) ----------- */
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
