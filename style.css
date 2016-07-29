@@ -13,7 +13,7 @@ Customized By: Gerard Greenidge and Keira Dooley
 
 Customizer URI: http://www.edunow.com and http://www.designbydooley.com
 
-Version: 3
+Custom Version: 3
 
 Tags: white, black, gray, light, custom-menu, custom-header, custom-background, one-column, two-columns, left-sidebar, right-sidebar, theme-options, threaded-comments, full-width-template, sticky-post, translation-ready, rtl-language-support, responsive-layout, fluid-layout
 
@@ -856,13 +856,6 @@ blockquote { /*KD Edit 10-12-15*/
     padding: 0 1em;
     padding-left: 25px;
     padding-top: 20px;
-}
-
-
-
-#mobilemailistplug{
-display:block;
-text-align:center;
 }
 
 .post-count-container {
