@@ -1,18 +1,18 @@
-@charset "UTF-8";
 /*
 
 Theme Name: Responsive-Child
-Template:responsive
+
+Template: responsive
 
 Theme URI: http://cyberchimps.com/responsive-theme/
 
-Description: Responsive Theme is a flexible foundation with fluid grid system that adapts your website to mobile devices and the desktop or any other viewing environment. Theme features 9 Page Templates, 11 Widget Areas, 6 Template Layouts, 4 Menu Positions and more. wPowerful but simple Theme Options for full CMS control with easy Logo Upload, Social Networking and Webmaster Tools etc. Responsive is WooCommerce Compatible, Multilingual Ready (WPML), RTL-Language Support, Retina-Ready, Search Engine Friendly, W3C Markup Validated and currently translated into 45 languages. Cross-Browser compatible. <a href="http://cyberchimps.com/forum/free/responsive/">Official support forum</a> (http://cyberchimps.com/forum/free/responsive/)
+Description: Responsive Theme is a flexible foundation with fluid grid system that adapts your website to aobile devices and the desktop or any other viewing environment. Theme features 9 Page Templates, 11 Widget Areas, 6 Template Layouts, 4 Menu Positions and more. Powerful but simple Theme Options for full CMS control with easy Logo Upload, Social Networking and Webmaster Tools etc. Responsive is WooCommerce Compatible, Multilingual Ready (WPML), RTL-Language Support, Retina-Ready, Search Engine Friendly, W3C Markup Validated and currently translated into 45 languages. Cross-Browser compatible. <a href="http://cyberchimps.com/forum/free/responsive/">Official support forum</a> (http://cyberchimps.com/forum/free/responsive/)
 
-Author: Gerard Greenidge
+Customized By: Gerard Greenidge and Keira Dooley
 
-Author URI: http://cyberchimps.com
+Customizer URI: http://www.edunow.com and http://www.designbudooley.com
 
-Version: 1.9.5.4
+Version: 4
 
 Tags: white, black, gray, light, custom-menu, custom-header, custom-background, one-column, two-columns, left-sidebar, right-sidebar, theme-options, threaded-comments, full-width-template, sticky-post, translation-ready, rtl-language-support, responsive-layout, fluid-layout
 
@@ -22,63 +22,26 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Text Domain: responsive
 
-
-
 Responsive WordPress Theme, Copyright (C) 2003-2014 Emil Uzelac, CyberChimps Inc
 
-
-
---------------------------------------------------------------
-
-WARNING: (BEFORE YOU MAKE ANY CHANGES)
-
---------------------------------------------------------------
-
-Please do not edit style.css or any other Theme files or
-
-Templates directly. If you do, your customizations will be lost
-
-as soon as you update Responsive.
-
-
-
-WordPress and CyberChimps highly recommends Child Theme.
-
-
-
-Read More:
-
-
-
-- http://codex.wordpress.org/Child_Themes
-
-- http://cyberchimps.com/guide/child-theme-example/
-
-- http://cyberchimps.com/guide-tags/child-theme-2/
-
-
+STAGE.MAKEALIVINGWRITING.COM
 
 */
 
 @import url("http://www.google.com/fonts/specimen/Francois+One");
 @import 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i';
 
+
 body {
 	-moz-font-smoothing: antialiased;
 	-webkit-font-smoothing: antialiased;
 	background: #ffffff;
 	color: #000000;
-	font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 	font-size: 14px;
 	font-smoothing: antialiased;
-	line-height: 1.5em;
+	line-height: 1.6em;
 	text-rendering: optimizeLegibility;
-}
-
-#container {
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
 }
 
 .skip-container {
@@ -95,15 +58,8 @@ border: 0;
 border-radius: 4px;
 clear: both;
 margin: 0 auto;
-padding: 0 0 20px 0;
+padding: 0;
 position: relative;
-max-width:1120px;
-}
-
-.main-nav {
-    clear: both;
-    background-color: black;
-    padding:0 75px;
 }
 
 #content {
@@ -111,19 +67,20 @@ margin-top: 40px;
 margin-bottom: 20px;
 margin-left: 80px;
 }
+
+.home #content-blog {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
 .col-620 {
 width: 57%;
 }
 
 body.home .col-620 { /*KD 10-12-15*/
-    width: 65%;
+    width: 60%;
 }
-
-div.hentry {
-    margin: 0;
-    padding: 0 20px;
-}
-
 
 p, hr, dl, pre, form, table, address, blockquote {
 margin: 1.2em 0;
@@ -166,7 +123,6 @@ margin-top: 15px;
 h2.pagetitle {
 	color: #666;
 }
-
 
 #sidebar ul li h2 {
 	color: #999;
@@ -218,6 +174,34 @@ h4 {
 border-radius: 6px;
 }*/
 
+blockquote{
+	padding: 0 1em;
+	padding-left: 70px;
+	background: transparent url(/assets/quote_bkg.jpg) no-repeat;
+	background-color: #f1f1f1;
+	border-left:none;
+	}
+	
+	blockquote p {
+    font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    line-height: 1.3em;
+    font-style: italic;
+    color: #888;
+}
+
+blockquote img, #content blockquote img {
+    border-radius: 120px;
+    width: 120px;
+	border: 5px solid #fff;
+}
+blockquote img.normalimage, #content blockquote img.normalimage {
+	border-radius: 6px;
+	 width: auto;
+	 border: 0;
+}
+	
+	
 /* =FEAR BUSTER 
 
 -------------------------------------------------------------- */
@@ -253,6 +237,12 @@ margin-top: 15px;
 
 .menu {
 background-color: #000000;
+/* background-image: none; */
+/* background-image: -webkit-linear-gradient(top, #585858, #3d3d3d); */
+/*background-image: -moz-linear-gradient(top, #585858, #3d3d3d);
+background-image: -ms-linear-gradient(top, #585858, #3d3d3d);
+background-image: -o-linear-gradient(top, #585858, #3d3d3d);
+background-image: linear-gradient(top, #585858, #3d3d3d);*/
 background-image:none;
 clear: both;
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#585858, endColorstr=#3d3d3d);
@@ -303,40 +293,45 @@ color: #ffcc33;
 padding-bottom:17px;
 }
 
-blockquote{
-	padding: 0 1em;
-	padding-left: 70px;
-	background: transparent url(/assets/quote_bkg.jpg) no-repeat;
-	background-color: #f1f1f1;
-	border-left:none;
-	-webkit-border-radius: 6px;
-	-moz-border-radius: 6px;
-	border-radius:6px;
-	}
+#container{
+	max-width:1120px;
+        padding:0;
+
+}
+
+.whitebox {
+    font-family: 'Kite One';
+    font-style: normal;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    border: 2px solid #f2f2f2;
+    padding: 20px;
+    color: #666;
+}
 	
 .graybox {
 clear: both;
 padding: .25em 1.5em;
 background: #f1f1f1;
 border-left: none;
--webkit-border-radius: 6px;
+/*-webkit-border-radius: 6px;
 -moz-border-radius: 6px;
-border-radius: 6px;
+border-radius: 6px;*/
 min-height: 175px;
 margin-bottom: 15px;
 }
 
 .graybox img {
 border: 2px solid #ccc;
--webkit-border-radius: 6px;
+/*-webkit-border-radius: 6px;
 -moz-border-radius: 6px;
-border-radius: 6px;
+border-radius: 6px;*/
 }
+
 
 #succesfulfreelancer{
 float:right;
 }
-
 
 /* =Header
 
@@ -551,7 +546,7 @@ padding-left: 15px;*/
 
 div.graylinebox {
 border: 2px solid #f2f2f2;
-border-radius: 8px;
+/*border-radius: 8px;*/
 padding: 10px 20px;
 margin-bottom: 15px;
 clear:both;
@@ -559,7 +554,7 @@ clear:both;
 
 div.graylinebox250 {
 border: 2px solid #f2f2f2;
-border-radius: 8px;
+/*border-radius: 8px;*/
 padding: 10px 20px;
 margin-bottom: 15px;
 min-height:250px;
@@ -568,7 +563,7 @@ clear:both;
 
 div.graylinebox330 {
 border: 2px solid #f2f2f2;
-border-radius: 8px;
+/*border-radius: 8px;*/
 padding: 10px 20px;
 margin-bottom: 15px;
 min-height:330px;
@@ -670,9 +665,191 @@ max-width:350px;
 
 /*** Media View Ports ****/
 
-@media screen and (max-width: 800px) {
+/*
+@media screen and (max-width: 1024px) {
 
 #logo {
+    float: none;
+    margin: 0;
+    text-align: center;
+}
+
+body.home .col-620 {
+    width: 100%;
+}
+
+#content {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 100%;
+}
+
+.grid, .grid-right {
+    float: none;
+}
+
+#featured-image .fluid-width-video-wrapper {
+    margin: 20px 0 0 0;
+}
+
+.top-widget {
+    float: none;
+    margin: 0 auto 10px auto;
+    position: relative;
+    text-align: center;
+    width: auto;
+}
+
+.top-widget .widget-title h3 {
+    text-align: center;
+}
+
+.js .sub-header-menu {
+    display: none;
+}
+
+.js .main-nav {
+    position: relative;
+    background-color: #585858;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#585858), to(#3d3d3d));
+    background-image: -webkit-linear-gradient(top, #585858, #3d3d3d);
+    background-image: -moz-linear-gradient(top, #585858, #3d3d3d);
+    background-image: -ms-linear-gradient(top, #585858, #3d3d3d);
+    background-image: -o-linear-gradient(top, #585858, #3d3d3d);
+    background-image: linear-gradient(top, #585858, #3d3d3d);
+    clear: both;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#585858, endColorstr=#3d3d3d);
+    margin: 0 auto;
+    padding:0;
+}
+
+.js .main-nav .menu {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 30px;
+    z-index: 1000;
+}
+
+.js .main-nav .menu ul {
+    margin-top: 1px;
+}
+
+.js .main-nav .menu li {
+    float: none;
+    background-color: #ffffff;
+    border: none;
+}
+
+.js .main-nav .menu li a {
+    color: #444444;
+    font-size: 13px;
+    font-weight: normal;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 15px;
+    border: none;
+    border-bottom: 1px solid #f5f5f5;
+    text-shadow: none;
+    text-align: left;
+    cursor: pointer;
+}
+
+	.js .main-nav .menu li.current_page_item,
+	.js .menu .current_page_item a,
+	.js .menu .current-menu-item a {
+		background-color: #f5f5f5;
+	}
+
+	.js .main-nav .menu li li:hover {
+		background: none !important;
+	}
+
+	.js .main-nav .menu li li a {
+		position: relative;
+		padding: 0 10px 0 30px;
+	}
+
+	.js .main-nav .menu li li li a {
+		position: relative;
+		padding: 0 10px 0 40px;
+	}
+
+	.js .main-nav .menu li a:hover,
+	.js .main-nav .menu li li a:hover {
+		background-image: none;
+		filter: none;
+		background-color: #f5f5f5 !important;
+	}
+
+	.js .main-nav .menu li li a::before {
+		content: '\2013';
+		position: absolute;
+		top: 0;
+		left: 20px;
+	}
+
+	.js .main-nav .menu li li li a::before {
+		content: '\2013';
+		position: absolute;
+		top: 0;
+		left: 20px;
+	}
+
+	.js .main-nav .menu li li li a::after {
+		content: '\2013';
+		position: absolute;
+		top: 0;
+		left: 30px;
+	}
+
+	.js .main-nav .menu li ul {
+		position: static;
+		visibility: visible;
+		background-color: #ffffff;
+	}
+
+	.js .main-nav .menu ul {
+		min-width: 0;
+	}
+
+	.js .main-nav #responsive_current_menu_item {
+		display: block;
+		padding: 5px 40px 5px 10px;
+		color: #ffffff;
+		font-weight: 700;
+		cursor: pointer;
+	}
+
+	.js .main-nav a#responsive_menu_button {
+		position: absolute;
+		display: block;
+		top: 0;
+		left: 100%;
+		height: 30px;
+		width: 23px;
+		margin-left: -30px;
+		background: url('/wp-content/themes/responsive/core/images/select-icons.png') 0 5px no-repeat;
+		cursor: pointer;
+	}
+
+	.js .main-nav a#responsive_menu_button.responsive-toggle-open {
+		background: url('/wp-content/themes/responsive/core/images/select-icons.png') 0 -46px no-repeat;
+	}
+
+
+}
+
+**/
+
+@media screen and (max-width: 800px) {
+
+	body {
+	}
+
+	#logo {
 		float: none;
 		margin: 0;
 		text-align: center;
@@ -735,7 +912,6 @@ body.home .col-620 { /*KD Edit 10-12-15*/
 		clear: both;
 		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#585858, endColorstr=#3d3d3d);
 		margin: 0 auto;
-                padding:0;
 	}
 
 	.js .main-nav .menu {
@@ -855,9 +1031,6 @@ body.home .col-620 { /*KD Edit 10-12-15*/
 
 }
 
-
-
-
 @media screen and (max-width: 768px) {
 
 img.alignright, img.alignleft, img.alignnone, a img.alignnone { /*KD Edit 10-12-15*/
@@ -875,13 +1048,6 @@ blockquote { /*KD Edit 10-12-15*/
     padding-top: 20px;
 }
 
-
-
-#mobilemailistplug{
-display:block;
-text-align:center;
-/*margin-top: -75px;*/
-}
 
 .post-count-container {
 clear: both;
@@ -916,7 +1082,6 @@ and (min-device-width : 320px)
 and (max-device-width : 480px) {
 /* Styles */
 
-
 	#header {
 	margin: 0 auto;
 	background-color: #fff;
@@ -947,9 +1112,9 @@ padding: 20px 1em;
 background: transparent url(/assets/quote_bkg.jpg) no-repeat;
 background-color: #f1f1f1;
 border-left: none;
--webkit-border-radius: 6px;
+/*-webkit-border-radius: 6px;
 -moz-border-radius: 6px;
-border-radius: 6px;
+border-radius: 6px;*/
 }
 
 .post-count-container{
@@ -975,16 +1140,15 @@ display:none;
 and (max-width : 321px) {
 /* Styles */
 
-
 .testimonial {
 padding: 20px 1em;
 /* padding-left: 70px; */
 background: transparent url(/assets/quote_bkg.jpg) no-repeat;
 background-color: #f1f1f1;
 border-left: none;
--webkit-border-radius: 6px;
+/*-webkit-border-radius: 6px;
 -moz-border-radius: 6px;
-border-radius: 6px;
+border-radius: 6px;*/
 }
 
 #mobilelogo{
@@ -1002,7 +1166,6 @@ display:none;
 @media only screen 
 and (max-width : 320px) {
 /* Styles */
-
 	
 #responsive_current_menu_item {
 	display: none;
@@ -1014,9 +1177,9 @@ padding: 20px 1em;
 background: transparent url(/assets/quote_bkg.jpg) no-repeat;
 background-color: #f1f1f1;
 border-left: none;
--webkit-border-radius: 6px;
+/*-webkit-border-radius: 6px;
 -moz-border-radius: 6px;
-border-radius: 6px;
+border-radius: 6px;*/
 }
 
 #mobilelogo{
@@ -1044,9 +1207,9 @@ padding: 20px 1em;
 background: transparent url(/assets/quote_bkg.jpg) no-repeat;
 background-color: #f1f1f1;
 border-left: none;
--webkit-border-radius: 6px;
+/*-webkit-border-radius: 6px;
 -moz-border-radius: 6px;
-border-radius: 6px;
+border-radius: 6px;*/
 }
 
 #mobilelogo{
@@ -1176,7 +1339,6 @@ and (min-device-width : 320px)
 and (max-device-width : 480px) {
 /* Styles */
 
-
 	#menu_container {
 	max-width: 100%;
 	margin: 0 auto;
@@ -1226,6 +1388,10 @@ display:block;
 display:none;
 }
 
+#wrapper{
+	padding-left:0px;
+}
+
 .post-count-container {
 clear: both;
 text-align: center;
@@ -1240,7 +1406,6 @@ max-width: 100%;
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) {
 /* Styles */
-
 
 #menu_container {
 max-width: 100%;
@@ -1324,7 +1489,6 @@ display:block;
 and (min-width : 1824px) {
 /* Styles */
 
-
 #mobilelogo{
 display:none;
 }
@@ -1361,4 +1525,4 @@ display:none;
 }
 
 
-}/* CSS Document */
+}
