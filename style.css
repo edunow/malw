@@ -5,7 +5,7 @@ Theme Name: Responsive-Child
 
 Template: responsive
 
-Theme URI: http://cyberchimps.com/responsive-theme/
+Theme URI: http://www.makealivingwriting.com/wp-content/themes/responsive-child/
 
 Description: Responsive Theme is a flexible foundation with fluid grid system that adapts your website to mobile devices and the desktop or any other viewing environment. Theme features 9 Page Templates, 11 Widget Areas, 6 Template Layouts, 4 Menu Positions and more. Powerful but simple Theme Options for full CMS control with easy Logo Upload, Social Networking and Webmaster Tools etc. Responsive is WooCommerce Compatible, Multilingual Ready (WPML), RTL-Language Support, Retina-Ready, Search Engine Friendly, W3C Markup Validated and currently translated into 45 languages. Cross-Browser compatible. <a href="http://cyberchimps.com/forum/free/responsive/">Official support forum</a> (http://cyberchimps.com/forum/free/responsive/)
 
@@ -13,7 +13,7 @@ Customized By: Gerard Greenidge and Keira Dooley
 
 Customizer URI: http://www.edunow.com and http://www.designbydooley.com
 
-Custom Version: 4
+Custom Version: 5
 
 Tags: white, black, gray, light, custom-menu, custom-header, custom-background, one-column, two-columns, left-sidebar, right-sidebar, theme-options, threaded-comments, full-width-template, sticky-post, translation-ready, rtl-language-support, responsive-layout, fluid-layout
 
@@ -694,11 +694,11 @@ input#mce-EMAIL, input#mce-FNAME, input#mce-LNAME {
 
 /*** Begin Start Here Landing Page ***/
 .start-here-head {
-    background-image: url(/wp-content/uploads/baby-newwriter-bkg.jpg);
+    background-image: url('/wp-content/uploads/start-here-road-bkg1.png');
     background-position: center;
     min-height: 428px;
     background-repeat: no-repeat;
-    background-color: #0a6b72;
+    background-color: #001400;
 }
 
 .start-hear-content {
@@ -718,6 +718,50 @@ input#mce-EMAIL, input#mce-FNAME, input#mce-LNAME {
     color: #fff;
 }
 
+.start-here-intro span {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.start-here-carol-headshot {
+    margin-top: 30px;
+}
+
+.start-here-intro a.button.large.yellow {
+    width: 234px;
+    height: 40px;
+    padding: 20px 20px 0px 20px;
+    text-align: center;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: black;
+}
+
+.start-here-intro .start-here-yellow-subscribe-button{
+    text-align: center;
+    font-size: 1.5em;
+    background-color: #FFD84F;
+    color: black;
+    width: 220px;
+    height: 40px;
+    padding-top: 17px;
+}
+
+.start-here-intro .start-here-yellow-subscribe-button a, .start-here-intro .start-here-yellow-subscribe-button a:visited{
+    text-decoration:none;
+    color: black;
+    padding: 20px 20px 20px 20px;
+
+}
+
+.start-here-intro .start-here-yellow-subscribe-button a:hover{
+    text-decoration:none;
+    color: white;
+    padding: 20px 20px 20px 20px;
+
+}
+
+
 .start-here-rec-links {
     /*background-color: #fff;*/
     padding: 10px;
@@ -726,9 +770,15 @@ input#mce-EMAIL, input#mce-FNAME, input#mce-LNAME {
    /* background-repeat: no-repeat;*/
 }
 
-.start-here-rec-links li {
-    font-size: 11px;
-    line-height: 16px;
+.start-here-rec-links h2 {
+    font-family: 'Caveat', Arial, sans-serif; /*KD 021317 */
+    margin: 7px 0;
+}
+
+.start-here-rec-links li { /*KD 021317 */
+    font-size: .9em;
+    line-height: 1.2em;
+    margin-bottom: 5px;
 }
 
 .start-here-rec-links a {
@@ -740,9 +790,11 @@ input#mce-EMAIL, input#mce-FNAME, input#mce-LNAME {
     max-width: 1120px;
 }
 
-h2#start-here-recent_post_head {
+h2#start-here-recent_post_head { /*KD 021317 */
     text-align: center;
     text-transform: uppercase;
+    font-size: 1.35em;
+    margin-top: 35px;
 }
 
 .start-here-malw-readership {
@@ -823,9 +875,66 @@ li.rpwe-li {
     color: #000;	
 }
 
-
+.start-here-related-products {
+    background-color: #FFD84F;
+    min-height: 266px;
+}
 
 /*** End Start Here Landing Page ***/
+
+/*** Start Here Bloggers ***/
+.start-here-bloggers-head {
+    background-image: url(/wp-content/uploads/blogging_cornerstone_bkg.jpg);
+    background-position: center;
+    min-height: 428px;
+    background-repeat: no-repeat;
+    background-color: #662e48;
+}
+
+.start-here-sbbi-plug {
+    background-color: #f9bd13;
+    min-height: 520px;
+    padding: 20px 0;
+}
+
+.start-here-sbbi-mastermind {
+    background-color: black;
+    padding: 20px;
+}
+
+.start-here-recent-guest-blogging-posts {
+    background-color: #F2F2F2;
+    min-height: 625px;
+    padding: 10px 0;
+}
+
+.start-here-bloggers-head .start-here-intro h2{
+    margin-top:20px;
+}
+
+/*** Start Here New Writers ***/
+
+.start-here-new-writer-head {
+    background-image: url(/wp-content/uploads/baby-newwriter-bkg.jpg);
+    background-position: center;
+    min-height: 428px;
+    background-repeat: no-repeat;
+    background-color: #0a6b72;
+}
+
+.start-here-new-writer-head .start-here-rec-links ul {
+    margin: 0;
+    padding-bottom: 0px;
+}
+
+
+.start-here-new-writer-head .start-here-rec-links {
+    padding: 10px 10px 0 10px;
+    margin: 20px 20px 0px 0;
+}
+
+
+/*** End Start Here Landing Pages ***/
 
 
 
@@ -859,6 +968,10 @@ body.home .col-620 { /*KD Edit 10-12-15*/
 	margin-left: 5px;
 	margin-right: 5px;
 	width: 100%;
+}
+
+.start-here-rec-links {
+    padding: 0;
 }
 
 .grid, .grid-right {
@@ -1032,6 +1145,20 @@ blockquote { /*KD Edit 10-12-15*/
 	margin-left: 0;
 	max-width: 100%;
 }
+
+.start-hear-content {
+   padding: 20px;
+}
+
+li.rpwe-li {
+    float: none;
+    margin: auto;
+}
+
+.start-here-rec-links {
+    padding: 10px 0 10px 0;
+}
+
 }
 @media only screen and (max-width : 600px) {
 /* Styles */
