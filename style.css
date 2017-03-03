@@ -13,7 +13,7 @@ Customized By: Gerard Greenidge and Keira Dooley
 
 Customizer URI: http://www.edunow.com and http://www.designbydooley.com
 
-Custom Version: 3
+Custom Version: 4
 
 Tags: white, black, gray, light, custom-menu, custom-header, custom-background, one-column, two-columns, left-sidebar, right-sidebar, theme-options, threaded-comments, full-width-template, sticky-post, translation-ready, rtl-language-support, responsive-layout, fluid-layout
 
@@ -29,17 +29,20 @@ Responsive WordPress Theme, Copyright (C) 2003-2014 Emil Uzelac, CyberChimps Inc
 
 */
 
-@import url("http://www.google.com/fonts/specimen/Francois+One");
-@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i';
+@import url('https://www.google.com/fonts/specimen/Francois+One');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+@import url('https://www.google.com/fonts/specimen/Kite+One');
+@import url('https://fonts.googleapis.com/css?family=Caveat:400,700');
+
 body {
 	-moz-font-smoothing: antialiased;
 	-webkit-font-smoothing: antialiased;
 	background: #ffffff;
 	color: #000000;
-	font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 	font-size: 14px;
 	font-smoothing: antialiased;
-	line-height: 1.5em;
+	line-height: 1.6em;
 	text-rendering: optimizeLegibility;
 }
 
@@ -59,6 +62,7 @@ body {
 	margin: 20px auto 20px auto;
 	padding: 0 0px 20px 0;
 	position: relative;
+        max-width:1120px;
 }
 
 #content {
@@ -176,7 +180,7 @@ blockquote {
 }
 
 blockquote p {
-	font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+	font-family: 'Kite One', Arial, Helvetica, sans-serif;
 	font-size: 1.2em;
 	line-height: 1.3em;
 	font-style: italic;
@@ -272,6 +276,11 @@ div.podcastpreview h3 {
 
 -------------------------------------------------------------- */
 
+.main-nav {
+    clear: both;
+    background-color: black;
+}
+
 .menu {
 	background-color: #000000;
 	background-image:none;
@@ -280,7 +289,11 @@ div.podcastpreview h3 {
 	margin: 0 auto;
 	font-family: 'Francois One', Arial, Helvetica, sans-serif;
 	letter-spacing: -0.06em;
+        max-width:1120px;
+
 }
+
+
 
 .menu a {
 	border-left: 1px solid #333;
@@ -325,8 +338,18 @@ li#menu-item-1588 a:hover { /* Writers Community */
 }
 
 #container {
-	max-width:1120px;
+	max-width:100%;
 	padding:0;
+}
+
+.whitebox {
+    font-family: 'Kite One';
+    font-style: normal;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    border: 2px solid #f2f2f2;
+    padding: 20px;
+    color: #666;
 }
 
 .graybox {
@@ -657,6 +680,278 @@ input#mce-EMAIL, input#mce-FNAME, input#mce-LNAME {
 }
 
 
+/**** No Margin Template ****/
+
+.page-template-no-margin-page-no-title #container {
+    max-width: 100%;
+    padding: 0;
+    margin:0;
+}
+
+.page-template-no-margin-page-no-title #wrapper {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.page-template-no-margin-page-no-title #header {
+    background-color: #000;
+}
+
+.page-template-no-margin-page-no-title .main-nav {
+    clear: both;
+    background-color: #000;
+    margin: 0 auto;
+    max-width: 1120px;
+}
+
+
+
+/**** End No Margin Template ****/
+
+/*** Begin Start Here Landing Page ***/
+.start-here-head {
+    background-image: url('/wp-content/uploads/start-here-banner.jpg');
+    background-position: center;
+    min-height: 428px;
+    background-repeat: no-repeat;
+    background-color: #001400;
+}
+
+.start-hear-content {
+    margin: 0 auto;
+    max-width: 1120px;
+}
+
+.start-here-intro h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.start-here-intro {
+    margin: 1em;
+    color: #fff;
+}
+
+.start-here-intro span {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.start-here-carol-headshot {
+    margin-top: 30px;
+}
+
+.start-here-intro a.button.large.yellow {
+    width: 234px;
+    height: 40px;
+    padding: 20px 20px 0px 20px;
+    text-align: center;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: black;
+}
+
+.start-here-intro .start-here-yellow-subscribe-button{
+    text-align: center;
+    font-size: 1.5em;
+    background-color: #FFD84F;
+    color: black;
+    width: 220px;
+    height: 40px;
+    padding-top: 17px;
+}
+
+.start-here-intro .start-here-yellow-subscribe-button a, .start-here-intro .start-here-yellow-subscribe-button a:visited{
+    text-decoration:none;
+    color: black;
+    padding: 20px 20px 20px 20px;
+
+}
+
+.start-here-intro .start-here-yellow-subscribe-button a:hover{
+    text-decoration:none;
+    color: white;
+    padding: 20px 20px 20px 20px;
+
+}
+
+
+.start-here-rec-links {
+    /*background-color: #fff;*/
+    padding: 10px;
+    margin: 20px 20px 20px 0;
+    background: #fff url(/wp-content/uploads/cornerstone_red-wedge.png) top right no-repeat;
+   /* background-repeat: no-repeat;*/
+}
+
+.start-here-rec-links h2 {
+    font-family: 'Caveat', Arial, sans-serif; /*KD 021317 */
+    margin: 7px 0;
+}
+
+.start-here-rec-links li { /*KD 021317 */
+    font-size: .9em;
+    line-height: 1.2em;
+    margin-bottom: 5px;
+}
+
+.start-here-rec-links a {
+    text-decoration: none;
+}
+
+.clear.start-here-recent-posts {
+    margin: 0 auto;
+    max-width: 1120px;
+}
+
+h2#start-here-recent_post_head { /*KD 021317 */
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.35em;
+    margin-top: 35px;
+}
+
+.start-here-malw-readership {
+    text-align: center;
+    background-color: #f14d31;
+    font-size: 2.625em;
+    font-weight: 900;
+    line-height: 1em;
+    padding: 20px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.start-here-sign-up {
+    background-image: url(/wp-content/uploads/purple-arrow-bkg.png);
+    min-height: 315px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #391948;
+}
+
+.sign-me-up-content {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding-left: 450px;
+}
+
+.start-here-sign-up-btn {
+    color: #fff;
+    text-align: center;
+    margin: 30px 45px 0px 0px;
+}
+
+p.start-here-signup-text {
+    font-weight: 600;
+    font-size: 22px;
+    line-height:34px;
+}
+
+p.start-here-signup-text span {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.start-here-ads {
+    margin: 0 auto;
+    max-width: 1120px;
+}
+
+.start-here-ads img.size-full {
+    max-width: 49%;
+    float: left;
+    padding: 5px;
+}
+
+.rpwe-time {
+    color: #bbb;
+    font-size: 11px;
+    display: none;
+}
+
+li.rpwe-li {
+    width: 350px;
+    float: left;
+    border-bottom: none !important;
+}
+
+.rpwe-block a {
+    display: inline!important;
+    text-decoration: none;
+    font-size: 20px;
+    float: left;
+    text-align: center;
+    margin-top: 10px;
+    padding-left: 25px;
+}
+.rpwe-block h3 a {
+    color: #000;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.start-here-related-products {
+    background-color: #FFD84F;
+    min-height: 266px;
+}
+
+/*** End Start Here Landing Page ***/
+
+/*** Start Here Bloggers ***/
+.start-here-bloggers-head {
+    background-image: url(/wp-content/uploads/blogging_cornerstone_bkg.jpg);
+    background-position: center;
+    min-height: 428px;
+    background-repeat: no-repeat;
+    background-color: #662e48;
+}
+
+.start-here-sbbi-plug {
+    background-color: #f9bd13;
+    min-height: 520px;
+    padding: 20px 0;
+}
+
+.start-here-sbbi-mastermind {
+    background-color: black;
+    padding: 20px;
+}
+
+.start-here-recent-guest-blogging-posts {
+    background-color: #F2F2F2;
+    min-height: 625px;
+    padding: 10px 0;
+}
+
+.start-here-bloggers-head .start-here-intro h2{
+    margin-top:20px;
+}
+
+/*** Start Here New Writers ***/
+
+.start-here-new-writer-head {
+    background-image: url(/wp-content/uploads/baby-newwriter-bkg.jpg);
+    background-position: center;
+    min-height: 428px;
+    background-repeat: no-repeat;
+    background-color: #0a6b72;
+}
+
+.start-here-new-writer-head .start-here-rec-links ul {
+    margin: 0;
+    padding-bottom: 0px;
+}
+
+
+.start-here-new-writer-head .start-here-rec-links {
+    padding: 10px 10px 0 10px;
+    margin: 20px 20px 0px 0;
+}
+
+
 /*** Media View Ports ****/
 
 @media screen and (max-width: 800px) {
@@ -688,6 +983,11 @@ body.home .col-620 { /*KD Edit 10-12-15*/
 	margin-right: 5px;
 	width: 100%;
 }
+
+.start-here-rec-links {
+    padding: 0;
+}
+
 
 .grid, .grid-right {
 	float: none;
@@ -860,6 +1160,20 @@ blockquote { /*KD Edit 10-12-15*/
 	margin-left: 0;
 	max-width: 100%;
 }
+
+.start-hear-content {
+   padding: 20px;
+}
+
+li.rpwe-li {
+    float: none;
+    margin: auto;
+}
+
+.start-here-rec-links {
+    padding: 10px 0 10px 0;
+}
+
 }
 @media only screen and (max-width : 600px) {
 /* Styles */
@@ -922,6 +1236,7 @@ blockquote { /*KD Edit 10-12-15*/
 #mobilelogo {
 	display:block;
 	text-align:center;
+	background: #fff;
 }
 
 #logo {
@@ -1027,6 +1342,12 @@ blockquote { /*KD Edit 10-12-15*/
 #logo {
 	display:block;
 }
+
+.rpwe-block {
+    max-width: 375px;
+    margin: 0 auto;
+}
+
 }
 
 /* iPads (portrait) ----------- */
@@ -1243,10 +1564,40 @@ blockquote { /*KD Edit 10-12-15*/
 #mobilelogo {
 	display:block;
 	text-align:center;
+	background: #fff;
 }
 
 #logo {
 	display:none;
+}
+
+.start-here-head {
+    background-image: none;
+}
+
+.start-here-sign-up {
+	background-image: none;
+}
+
+.start-here-ads img.size-full {
+	max-width: none;
+	float: left;
+	padding: 0;
+	width: 100%;
+	margin-bottom: 15px;
+}
+.sign-me-up-content {
+	max-width: none;
+	margin: 0 auto;
+	padding-left: 0;
+	width: 100%;
+
+}
+.start-here-sign-up-btn {
+	color: #fff;
+	text-align: center;
+	margin: 0;
+	padding: 30px 0;
 }
 }
 
