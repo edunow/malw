@@ -5,7 +5,7 @@ Theme Name: Responsive-Child
 
 Template: responsive
 
-Theme URI: http://www.makealivingwriting.com/wp-content/themes/responsive-child/
+Theme URI: http://cyberchimps.com/responsive-theme/
 
 Description: Responsive Theme is a flexible foundation with fluid grid system that adapts your website to mobile devices and the desktop or any other viewing environment. Theme features 9 Page Templates, 11 Widget Areas, 6 Template Layouts, 4 Menu Positions and more. Powerful but simple Theme Options for full CMS control with easy Logo Upload, Social Networking and Webmaster Tools etc. Responsive is WooCommerce Compatible, Multilingual Ready (WPML), RTL-Language Support, Retina-Ready, Search Engine Friendly, W3C Markup Validated and currently translated into 45 languages. Cross-Browser compatible. <a href="http://cyberchimps.com/forum/free/responsive/">Official support forum</a> (http://cyberchimps.com/forum/free/responsive/)
 
@@ -13,9 +13,7 @@ Customized By: Gerard Greenidge and Keira Dooley
 
 Customizer URI: http://www.edunow.com and http://www.designbydooley.com
 
-Custom Version: 5
-
-Last updated: 2017-02-25
+Custom Version: 4
 
 Tags: white, black, gray, light, custom-menu, custom-header, custom-background, one-column, two-columns, left-sidebar, right-sidebar, theme-options, threaded-comments, full-width-template, sticky-post, translation-ready, rtl-language-support, responsive-layout, fluid-layout
 
@@ -25,15 +23,16 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Text Domain: responsive
 
-WWW.MAKEALIVINGWRITING.COM
+DEV.MAKEALIVINGWRITING.COM
 
 Responsive WordPress Theme, Copyright (C) 2003-2014 Emil Uzelac, CyberChimps Inc
 
 */
 
-@import url("http://www.google.com/fonts/specimen/Francois+One");
-@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i';
-@import url("http://www.google.com/fonts/specimen/Kite+One");
+@import url('https://www.google.com/fonts/specimen/Francois+One');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+@import url('https://www.google.com/fonts/specimen/Kite+One');
+@import url('https://fonts.googleapis.com/css?family=Caveat:400,700');
 
 body {
 	-moz-font-smoothing: antialiased;
@@ -63,6 +62,7 @@ body {
 	margin: 20px auto 20px auto;
 	padding: 0 0px 20px 0;
 	position: relative;
+        max-width:1120px;
 }
 
 #content {
@@ -276,6 +276,11 @@ div.podcastpreview h3 {
 
 -------------------------------------------------------------- */
 
+.main-nav {
+    clear: both;
+    background-color: black;
+}
+
 .menu {
 	background-color: #000000;
 	background-image:none;
@@ -284,7 +289,11 @@ div.podcastpreview h3 {
 	margin: 0 auto;
 	font-family: 'Francois One', Arial, Helvetica, sans-serif;
 	letter-spacing: -0.06em;
+        max-width:1120px;
+
 }
+
+
 
 .menu a {
 	border-left: 1px solid #333;
@@ -329,7 +338,7 @@ li#menu-item-1588 a:hover { /* Writers Community */
 }
 
 #container {
-	max-width:1120px;
+	max-width:100%;
 	padding:0;
 }
 
@@ -679,6 +688,12 @@ input#mce-EMAIL, input#mce-FNAME, input#mce-LNAME {
     margin:0;
 }
 
+.page-template-no-margin-page-no-title #wrapper {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
 .page-template-no-margin-page-no-title #header {
     background-color: #000;
 }
@@ -696,17 +711,19 @@ input#mce-EMAIL, input#mce-FNAME, input#mce-LNAME {
 
 /*** Begin Start Here Landing Page ***/
 .start-here-head {
-    background-image: url('/wp-content/uploads/start-here-road-bkg1.png');
+    background-image: url('/wp-content/uploads/start-here-banner.jpg');
     background-position: center;
     min-height: 428px;
     background-repeat: no-repeat;
     background-color: #001400;
 }
 
-.start-hear-content {
+.start-hear-content, .mentor-content {
     margin: 0 auto;
     max-width: 1120px;
 }
+
+
 
 .start-here-intro h2 {
     color: #fff;
@@ -874,7 +891,8 @@ li.rpwe-li {
     padding-left: 25px;
 }
 .rpwe-block h3 a {
-    color: #000;	
+    color: #000;
+    font-family: 'Open Sans', Arial, sans-serif;
 }
 
 .start-here-related-products {
@@ -936,9 +954,269 @@ li.rpwe-li {
 }
 
 
-/*** End Start Here Landing Pages ***/
+/***** Mentoring Section *****/
+
+.arrow-down {
+  width: 0; 
+  height: 0; 
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent; 
+  border-top: 40px solid #BAD7E2;
+  margin: auto;
+}
+
+.mentor-head {
+    background-image: url(/wp-content/uploads/mentoring-banner.jpg);
+    background-position: center;
+    min-height: 428px;
+    background-repeat: no-repeat;
+    background-color: #D9E7F0;
+    padding: 0;
+}
+
+.mentor-talk-to-pro h1 {
+    font-size: 46px;
+}
+
+.mentor-talk-to-pro {
+    background-color: #BAD7E2;
+    color: black;
+    padding: 20px 0;
+    font-size: 17px;
+}
+
+.mentor-den h2, .mentor-den2x h2, .mentor-talk-to-pro h2 {
+    font-size: 36px;
+    text-align: center;
+}
 
 
+.mentor-den2x .black-lined-button {
+    border: 1px solid black;
+    width: 243px;
+    height: 48px;
+    padding: 25px 0 0 0;
+    margin: 0px auto;
+}
+
+.mentor-den .black-lined-button {
+    border: 1px solid black;
+    width: 310px;
+    height: 48px;
+    padding: 25px 0 0 0;
+    margin: 0px auto;
+}
+
+
+.mentor-2x-triple {
+    background-color: #0E2F55;
+    margin: 0;
+    padding: 20px 0;
+    border: none;
+}
+
+.mentor-2x-triple .mentor-video{
+    height: 315px;
+    width: 560px; 
+    margin: 20px auto;
+}
+
+.mentor-2x-triple h2{
+    font-family: caveat;
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+}
+
+.mentor-2x-triple .white-lined-button {
+    border: 1px solid white;
+    width: 420px;
+    height: 48px;
+    padding: 25px 0 0 0;
+    margin: 0px auto;
+}
+
+.mentor-2x-triple .white-lined-button a{
+    text-decoration: none;
+    color: white;
+    padding:27px 63px;
+    font-weight: bold;
+}
+
+.mentor-2x-triple .white-lined-button a:hover{
+    color:#0E2F55;
+    background-color: white;
+}
+
+
+.mentor-new-freelance-writers{
+    padding: 20px 0;
+    font-size: 17px;
+}
+
+.mentor-new-freelance-writers h2{
+    font-size: 36px;
+    max-width: 670px;
+}
+
+.mentor-new-freelance-writers p{
+    font-size: 17px;
+    max-width: 630px;
+}
+
+.mentor-new-freelance-writers .black-lined-button {
+    border: 1px solid black;
+    width: 300px;
+    height: 50px;
+    padding: 25px 0 0 0;
+}
+
+.mentor-new-freelance-writers .black-lined-button a, .mentor-den-vs-den2x .black-lined-button a{
+    text-decoration: none;
+    color: black;
+    padding:27px 63px;
+}
+
+.mentor-new-freelance-writers .black-lined-button a:hover, .mentor-den-vs-den2x .black-lined-button a:hover{
+    color:white;
+    background-color: black;
+}
+
+
+.mentor-launch-grow {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    font-size: 17px;
+}
+
+.mentor-launch-grow h2 {
+    font-size: 36pt;
+    color: #FFD84F;
+}
+
+.mentor-launch-grow a {
+    color: #FFD84F;
+}
+
+.mentor-sbbi {
+    background-color: #FFD84F;
+    padding: 0 0 20px 0;
+}
+
+.mentor-sbbi .black-lined-button {
+    border: 1px solid black;
+    width: 300px;
+    margin: 0px auto;
+    height: 50px;
+    padding: 25px 0 0 0;
+}
+
+.mentor-sbbi .black-lined-button a{
+    text-decoration: none;
+    color: black;
+    padding:27px 25px;
+}
+
+.mentor-sbbi .black-lined-button a:hover{
+    color:white;
+    background-color: black;
+}
+
+.mentor-why-not-one-on-one p{
+    font-size: 17px;
+}
+
+.mentor-why-not-one-on-one .caveat {
+    font-family: caveat;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.mentor-mentee-posts {
+    clear: both;
+    background-color: #F2F2F2;
+    padding: 20px 0;
+    font-size:17px;
+}
+
+.mentor-why-not-one-on-one h2, .mentor-mentee-posts h2{
+    font-size:36px;
+}
+
+.mentor-how-i-started{
+    color:white;
+    background-color:black;
+    height: 300px;
+    padding: 20px 0;
+    font-size:17px;
+}
+
+
+.mentor-how-i-started h2{
+    color:white;
+    font-size:36px;
+}
+
+.mentor-mentee-quote{
+    max-width:780px;
+    margin: 0 auto;
+    color:#666666;
+}
+
+
+.mentor-unsure-band {
+    background-color: #FFD84F;
+    margin: 0;
+    padding: 20px 0;
+    border: none;
+}
+
+.mentor-unsure-band h3 {
+    font-size: 36px;
+}
+
+.mentor-unsure-band .black-lined-button {
+    border: 1px solid black;
+    width: 250px;
+    margin: 0px auto;
+    height: 70px;
+    padding: 0 0 0 0;
+}
+
+.mentor-unsure-band a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    padding: 13px 0;
+}
+
+.mentor-unsure-band a:hover {
+    color:white;
+    background-color: black;
+}
+
+.mentor-unsure-band a {
+    text-decoration: none;
+    font-size: 15.5px;
+    font-weight: normal;
+}
+
+.black-lined-button span.line1 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/*.mentor-unsure-band a span.line1 {
+    padding: 20px 16px 0 16px;
+}
+
+.mentor-unsure-band span.line2 {
+    padding: 0 40px 25px 40px;
+}
+*/
 
 /*** Media View Ports ****/
 
@@ -975,6 +1253,7 @@ body.home .col-620 { /*KD Edit 10-12-15*/
 .start-here-rec-links {
     padding: 0;
 }
+
 
 .grid, .grid-right {
 	float: none;
@@ -1329,6 +1608,12 @@ li.rpwe-li {
 #logo {
 	display:block;
 }
+
+.rpwe-block {
+    max-width: 375px;
+    margin: 0 auto;
+}
+
 }
 
 /* iPads (portrait) ----------- */
@@ -1551,12 +1836,15 @@ li.rpwe-li {
 #logo {
 	display:none;
 }
+
 .start-here-head {
-	background-image: none;
+    background-image: none;
 }
+
 .start-here-sign-up {
 	background-image: none;
 }
+
 .start-here-ads img.size-full {
 	max-width: none;
 	float: left;
