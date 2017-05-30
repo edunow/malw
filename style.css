@@ -5,7 +5,7 @@ Theme Name: Responsive-Child
 
 Template: responsive
 
-Theme URI: http://cyberchimps.com/responsive-theme/
+Theme URI: http://www.makealivingwriting.com/wp-content/themes/responsive-child/
 
 Description: Responsive Theme is a flexible foundation with fluid grid system that adapts your website to mobile devices and the desktop or any other viewing environment. Theme features 9 Page Templates, 11 Widget Areas, 6 Template Layouts, 4 Menu Positions and more. Powerful but simple Theme Options for full CMS control with easy Logo Upload, Social Networking and Webmaster Tools etc. Responsive is WooCommerce Compatible, Multilingual Ready (WPML), RTL-Language Support, Retina-Ready, Search Engine Friendly, W3C Markup Validated and currently translated into 45 languages. Cross-Browser compatible. <a href="http://cyberchimps.com/forum/free/responsive/">Official support forum</a> (http://cyberchimps.com/forum/free/responsive/)
 
@@ -13,7 +13,9 @@ Customized By: Gerard Greenidge and Keira Dooley
 
 Customizer URI: http://www.edunow.com and http://www.designbydooley.com
 
-Custom Version: 4
+Custom Version: 5
+
+Last updated: 2017-05-29
 
 Tags: white, black, gray, light, custom-menu, custom-header, custom-background, one-column, two-columns, left-sidebar, right-sidebar, theme-options, threaded-comments, full-width-template, sticky-post, translation-ready, rtl-language-support, responsive-layout, fluid-layout
 
@@ -23,15 +25,15 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Text Domain: responsive
 
-DEV.MAKEALIVINGWRITING.COM
+WWW.MAKEALIVINGWRITING.COM
 
 Responsive WordPress Theme, Copyright (C) 2003-2014 Emil Uzelac, CyberChimps Inc
 
 */
 
-@import url('https://www.google.com/fonts/specimen/Francois+One');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
-@import url('https://www.google.com/fonts/specimen/Kite+One');
+@import url("https://www.google.com/fonts/specimen/Francois+One");
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i';
+@import url("https://www.google.com/fonts/specimen/Kite+One");
 @import url('https://fonts.googleapis.com/css?family=Caveat:400,700');
 
 body {
@@ -62,7 +64,6 @@ body {
 	margin: 20px auto 20px auto;
 	padding: 0 0px 20px 0;
 	position: relative;
-        max-width:1120px;
 }
 
 #content {
@@ -276,11 +277,6 @@ div.podcastpreview h3 {
 
 -------------------------------------------------------------- */
 
-.main-nav {
-    clear: both;
-    background-color: black;
-}
-
 .menu {
 	background-color: #000000;
 	background-image:none;
@@ -289,11 +285,7 @@ div.podcastpreview h3 {
 	margin: 0 auto;
 	font-family: 'Francois One', Arial, Helvetica, sans-serif;
 	letter-spacing: -0.06em;
-        max-width:1120px;
-
 }
-
-
 
 .menu a {
 	border-left: 1px solid #333;
@@ -338,7 +330,7 @@ li#menu-item-1588 a:hover { /* Writers Community */
 }
 
 #container {
-	max-width:100%;
+	max-width:1120px;
 	padding:0;
 }
 
@@ -617,6 +609,7 @@ a:hover.more-link {
 
 .post-entry h3 {
 	font-size: 1.4em;
+        line-height: 1.25em;
 }
 
 .page #pings, .page #comments, .page .commentlist {
@@ -688,12 +681,6 @@ input#mce-EMAIL, input#mce-FNAME, input#mce-LNAME {
     margin:0;
 }
 
-.page-template-no-margin-page-no-title #wrapper {
-    max-width: 100%;
-    padding: 0;
-    margin: 0;
-}
-
 .page-template-no-margin-page-no-title #header {
     background-color: #000;
 }
@@ -722,8 +709,6 @@ input#mce-EMAIL, input#mce-FNAME, input#mce-LNAME {
     margin: 0 auto;
     max-width: 1120px;
 }
-
-
 
 .start-here-intro h2 {
     color: #fff;
@@ -892,7 +877,7 @@ li.rpwe-li {
 }
 .rpwe-block h3 a {
     color: #000;
-    font-family: 'Open Sans', Arial, sans-serif;
+    font-family: 'Open Sans', Arial, sans-serif;	
 }
 
 .start-here-related-products {
@@ -954,6 +939,8 @@ li.rpwe-li {
 }
 
 
+/*** End Start Here Landing Pages ***/
+
 /***** Mentoring Section *****/
 
 .arrow-down {
@@ -993,18 +980,41 @@ li.rpwe-li {
 
 .mentor-den2x .black-lined-button {
     border: 1px solid black;
-    width: 243px;
+    max-width: 263px;
     height: 48px;
     padding: 25px 0 0 0;
     margin: 0px auto;
 }
 
-.mentor-den .black-lined-button {
+.mentor-den2x .black-lined-button a{
+    text-decoration: none;
+    color: black;
+    padding:23px 30px;
+    max-width: 263px;
+}
+
+/*.mentor-den .black-lined-button {
     border: 1px solid black;
-    width: 310px;
+    max-width: 310px;
     height: 48px;
     padding: 25px 0 0 0;
     margin: 0px auto;
+}*/
+
+.mentor-den .black-lined-button {
+    border: 1px solid black;
+    max-width: 184px;
+    height: 50px;
+    padding: 25px 0 0 0;
+    margin: 0px auto;
+}
+
+.mentor-den .black-lined-button a{
+    padding: 23px 19px;
+    text-decoration: none;
+    color: black;
+    max-width: 184px;
+    
 }
 
 
@@ -1017,7 +1027,7 @@ li.rpwe-li {
 
 .mentor-2x-triple .mentor-video{
     height: 315px;
-    width: 560px; 
+    max-width: 560px; 
     margin: 20px auto;
 }
 
@@ -1030,18 +1040,19 @@ li.rpwe-li {
 
 .mentor-2x-triple .white-lined-button {
     border: 1px solid white;
-    width: 420px;
-    height: 48px;
-    padding: 25px 0 0 0;
+    max-width: 420px;
+    height: 40px;
+    padding: 17px 0 0 0;
     margin: 0px auto;
 }
 
-.mentor-2x-triple .white-lined-button a{
+.mentor-2x-triple .white-lined-button a {
     text-decoration: none;
     color: white;
-    padding:27px 63px;
     font-weight: bold;
+    /*padding: 18px 68px;*/
 }
+
 
 .mentor-2x-triple .white-lined-button a:hover{
     color:#0E2F55;
@@ -1066,16 +1077,17 @@ li.rpwe-li {
 
 .mentor-new-freelance-writers .black-lined-button {
     border: 1px solid black;
-    width: 300px;
+    max-width: 300px;
     height: 50px;
     padding: 25px 0 0 0;
 }
 
-.mentor-new-freelance-writers .black-lined-button a, .mentor-den-vs-den2x .black-lined-button a{
+.mentor-new-freelance-writers .black-lined-button a{
+    padding: 23px 76px;
     text-decoration: none;
     color: black;
-    padding:27px 63px;
 }
+
 
 .mentor-new-freelance-writers .black-lined-button a:hover, .mentor-den-vs-den2x .black-lined-button a:hover{
     color:white;
@@ -1088,6 +1100,10 @@ li.rpwe-li {
     color: white;
     padding: 20px 0;
     font-size: 17px;
+}
+
+.mentor-launch-grow ul{
+    list-style-type: none;
 }
 
 .mentor-launch-grow h2 {
@@ -1106,7 +1122,7 @@ li.rpwe-li {
 
 .mentor-sbbi .black-lined-button {
     border: 1px solid black;
-    width: 300px;
+    max-width: 300px;
     margin: 0px auto;
     height: 50px;
     padding: 25px 0 0 0;
@@ -1115,7 +1131,7 @@ li.rpwe-li {
 .mentor-sbbi .black-lined-button a{
     text-decoration: none;
     color: black;
-    padding:27px 25px;
+    padding:27px 81px;
 }
 
 .mentor-sbbi .black-lined-button a:hover{
@@ -1147,8 +1163,7 @@ li.rpwe-li {
 .mentor-how-i-started{
     color:white;
     background-color:black;
-    height: 300px;
-    padding: 20px 0;
+    padding: 20px 0 50px 0;
     font-size:17px;
 }
 
@@ -1178,7 +1193,7 @@ li.rpwe-li {
 
 .mentor-unsure-band .black-lined-button {
     border: 1px solid black;
-    width: 250px;
+    max-width: 250px;
     margin: 0px auto;
     height: 70px;
     padding: 0 0 0 0;
@@ -1253,7 +1268,6 @@ body.home .col-620 { /*KD Edit 10-12-15*/
 .start-here-rec-links {
     padding: 0;
 }
-
 
 .grid, .grid-right {
 	float: none;
@@ -1403,6 +1417,47 @@ body.home .col-620 { /*KD Edit 10-12-15*/
 .js .main-nav a#responsive_menu_button.responsive-toggle-open {
 	background: url('/wp-content/themes/responsive/core/images/select-icons.png') 0 -46px no-repeat;
 }
+
+.mentor-content{
+    padding: 10px 20px;
+}
+
+.mentor-new-freelance-writers .black-lined-button {
+    margin: 0 auto;
+}
+
+.mentor-head {
+    background-image: none;
+}
+
+.mentor-new-freelance-writers h2{
+    max-width: 100%;
+    text-align:center;
+    
+}
+
+.mentor-new-freelance-writers p{
+    max-width: 100%;
+}
+
+.mentor-2x-triple .mentor-video {
+    height: auto;
+}
+
+.mentor-2x-triple .white-lined-button a {
+    padding: 10px;
+    display:block;
+    
+}
+
+.mentor-2x-triple .white-lined-button {
+    border: 1px solid white;
+    max-width: 200px;
+    height: auto;
+    padding: 0;
+    margin: 0px auto;
+}
+
 }
 
 @media screen and (max-width: 768px) {
@@ -1591,6 +1646,12 @@ li.rpwe-li {
 #logo {
 	display:block;
 }
+
+.rpwe-block {
+    max-width: 375px;
+    margin: 0 auto;
+}
+
 }
 
 /* iPads (landscape) ----------- (min-device-width : 768px)  */
@@ -1608,12 +1669,6 @@ li.rpwe-li {
 #logo {
 	display:block;
 }
-
-.rpwe-block {
-    max-width: 375px;
-    margin: 0 auto;
-}
-
 }
 
 /* iPads (portrait) ----------- */
@@ -1640,6 +1695,12 @@ li.rpwe-li {
 #logo {
 	display:block;
 }
+
+.rpwe-block {
+    max-width: 375px;
+    margin: 0 auto;
+}
+
 }
 
 /* Desktops and laptops ----------- */
@@ -1787,6 +1848,8 @@ li.rpwe-li {
 #logo {
 	display:none;
 }
+
+
 }
 
 /* Desktops and laptops ----------- */
@@ -1836,7 +1899,6 @@ li.rpwe-li {
 #logo {
 	display:none;
 }
-
 .start-here-head {
     background-image: none;
 }
@@ -1844,7 +1906,6 @@ li.rpwe-li {
 .start-here-sign-up {
 	background-image: none;
 }
-
 .start-here-ads img.size-full {
 	max-width: none;
 	float: left;
