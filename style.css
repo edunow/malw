@@ -5,7 +5,7 @@ Theme Name: Responsive-Child
 
 Template: responsive
 
-Theme URI: http://www.makealivingwriting.com/wp-content/themes/responsive-child/
+Theme URI: http://cyberchimps.com/responsive-theme/
 
 Description: Responsive Theme is a flexible foundation with fluid grid system that adapts your website to mobile devices and the desktop or any other viewing environment. Theme features 9 Page Templates, 11 Widget Areas, 6 Template Layouts, 4 Menu Positions and more. Powerful but simple Theme Options for full CMS control with easy Logo Upload, Social Networking and Webmaster Tools etc. Responsive is WooCommerce Compatible, Multilingual Ready (WPML), RTL-Language Support, Retina-Ready, Search Engine Friendly, W3C Markup Validated and currently translated into 45 languages. Cross-Browser compatible. <a href="http://cyberchimps.com/forum/free/responsive/">Official support forum</a> (http://cyberchimps.com/forum/free/responsive/)
 
@@ -13,9 +13,7 @@ Customized By: Gerard Greenidge and Keira Dooley
 
 Customizer URI: http://www.edunow.com and http://www.designbydooley.com
 
-Custom Version: 5
-
-Last updated: 2017-05-29
+Custom Version: 4
 
 Tags: white, black, gray, light, custom-menu, custom-header, custom-background, one-column, two-columns, left-sidebar, right-sidebar, theme-options, threaded-comments, full-width-template, sticky-post, translation-ready, rtl-language-support, responsive-layout, fluid-layout
 
@@ -25,15 +23,15 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Text Domain: responsive
 
-WWW.MAKEALIVINGWRITING.COM
+DEV.MAKEALIVINGWRITING.COM
 
 Responsive WordPress Theme, Copyright (C) 2003-2014 Emil Uzelac, CyberChimps Inc
 
 */
 
-@import url("https://www.google.com/fonts/specimen/Francois+One");
-@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i';
-@import url("https://www.google.com/fonts/specimen/Kite+One");
+@import url('https://www.google.com/fonts/specimen/Francois+One');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+@import url('https://www.google.com/fonts/specimen/Kite+One');
 @import url('https://fonts.googleapis.com/css?family=Caveat:400,700');
 
 body {
@@ -42,9 +40,9 @@ body {
 	background: #ffffff;
 	color: #000000;
 	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-	font-size: 14px;
+	font-size: 17px;
 	font-smoothing: antialiased;
-	line-height: 1.6em;
+	line-height: 1.4705882352941178em;
 	text-rendering: optimizeLegibility;
 }
 
@@ -64,6 +62,7 @@ body {
 	margin: 20px auto 20px auto;
 	padding: 0 0px 20px 0;
 	position: relative;
+        max-width:1120px;
 }
 
 #content {
@@ -87,17 +86,24 @@ body.home .col-620 { /*KD 10-12-15*/
 }
 
 p, hr, dl, pre, form, table, address, blockquote {
-	margin: 1.2em 0;
+	margin: 1em 0;
+}
+
+.post-meta {
+    clear: both;
+    margin-bottom: 10px;
+    color: #9f9f9f;
+    font-size: 0.7058823529411765em; /* 12px */
 }
 
 a, a:link {
 	color: #990000;
-	font-weight: normal;
+	font-weight: inherit;
 	text-decoration: underline;
 }
 
 a:hover {
-	font-weight: normal;
+	font-weight: inherit;
 	text-decoration: none;
 }
 
@@ -134,7 +140,7 @@ h2.pagetitle {
 
 h1, h1.entry-title.post-title {
 	font-family: 'Francois One', Arial, Helvetica, sans-serif;
-	font-size: 2.2em;
+	font-size: 2.176470588235294em; /*used to be 2.2em */
 	font-weight: normal;
 	color:#000;
 }
@@ -277,6 +283,11 @@ div.podcastpreview h3 {
 
 -------------------------------------------------------------- */
 
+.main-nav {
+    clear: both;
+    background-color: black;
+}
+
 .menu {
 	background-color: #000000;
 	background-image:none;
@@ -285,19 +296,23 @@ div.podcastpreview h3 {
 	margin: 0 auto;
 	font-family: 'Francois One', Arial, Helvetica, sans-serif;
 	letter-spacing: -0.06em;
+        max-width:1120px;
+
 }
 
+
+
 .menu a {
-	border-left: 1px solid #333;
+	border-left: 0;
 	border-top: 10px solid #000;
 	border-bottom: 10px solid #000;
 	color: #ffffff;
 	cursor: pointer;
 	display: block;
-	font-size: 1.25em;
+	font-size: 1em;
 	font-weight: normal;
-	height: 23px;
-	line-height: 1.25em;
+	height: 1em;
+	line-height: 1em;
 	margin: 0;
 	padding: 0 0.7em;
 	position: relative;
@@ -325,12 +340,16 @@ li#menu-item-1588 a:hover { /* Writers Community */
 	color: #ffcc33;
 }
 
+.post-entry ol{
+	line-height:inherit;
+}
+
 .entry ol li, .entry ul li {
 	padding-bottom:17px;
 }
 
 #container {
-	max-width:1120px;
+	max-width:100%;
 	padding:0;
 }
 
@@ -604,12 +623,21 @@ a:hover.more-link {
 }
 
 .post-entry h2 {
-	font-size: 1.6em;
+	font-size: 1.8823529411764706em; /* 32px */
+	margin-bottom:0;
 }
 
 .post-entry h3 {
-	font-size: 1.4em;
-        line-height: 1.25em;
+	font-size: 1.5294117647058822em; /* 29px */
+        font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+        font-weight:400;
+        margin-bottom:0;
+}
+
+.post-entry h4{
+       font-size: 1.4705882352941178em; /* 25px */
+       font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+       font-weight:600;
 }
 
 .page #pings, .page #comments, .page .commentlist {
@@ -681,6 +709,12 @@ input#mce-EMAIL, input#mce-FNAME, input#mce-LNAME {
     margin:0;
 }
 
+.page-template-no-margin-page-no-title #wrapper {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
 .page-template-no-margin-page-no-title #header {
     background-color: #000;
 }
@@ -709,6 +743,8 @@ input#mce-EMAIL, input#mce-FNAME, input#mce-LNAME {
     margin: 0 auto;
     max-width: 1120px;
 }
+
+
 
 .start-here-intro h2 {
     color: #fff;
@@ -877,7 +913,7 @@ li.rpwe-li {
 }
 .rpwe-block h3 a {
     color: #000;
-    font-family: 'Open Sans', Arial, sans-serif;	
+    font-family: 'Open Sans', Arial, sans-serif;
 }
 
 .start-here-related-products {
@@ -938,8 +974,6 @@ li.rpwe-li {
     margin: 20px 20px 0px 0;
 }
 
-
-/*** End Start Here Landing Pages ***/
 
 /***** Mentoring Section *****/
 
@@ -1233,6 +1267,11 @@ li.rpwe-li {
 }
 */
 
+.comments-link {
+    font-size: 100%;
+}
+
+
 /*** Media View Ports ****/
 
 @media screen and (max-width: 800px) {
@@ -1268,6 +1307,7 @@ body.home .col-620 { /*KD Edit 10-12-15*/
 .start-here-rec-links {
     padding: 0;
 }
+
 
 .grid, .grid-right {
 	float: none;
@@ -1458,6 +1498,7 @@ body.home .col-620 { /*KD Edit 10-12-15*/
     margin: 0px auto;
 }
 
+
 }
 
 @media screen and (max-width: 768px) {
@@ -1646,12 +1687,6 @@ li.rpwe-li {
 #logo {
 	display:block;
 }
-
-.rpwe-block {
-    max-width: 375px;
-    margin: 0 auto;
-}
-
 }
 
 /* iPads (landscape) ----------- (min-device-width : 768px)  */
@@ -1669,6 +1704,12 @@ li.rpwe-li {
 #logo {
 	display:block;
 }
+
+.rpwe-block {
+    max-width: 375px;
+    margin: 0 auto;
+}
+
 }
 
 /* iPads (portrait) ----------- */
@@ -1695,12 +1736,6 @@ li.rpwe-li {
 #logo {
 	display:block;
 }
-
-.rpwe-block {
-    max-width: 375px;
-    margin: 0 auto;
-}
-
 }
 
 /* Desktops and laptops ----------- */
@@ -1848,8 +1883,6 @@ li.rpwe-li {
 #logo {
 	display:none;
 }
-
-
 }
 
 /* Desktops and laptops ----------- */
@@ -1899,6 +1932,7 @@ li.rpwe-li {
 #logo {
 	display:none;
 }
+
 .start-here-head {
     background-image: none;
 }
@@ -1906,6 +1940,7 @@ li.rpwe-li {
 .start-here-sign-up {
 	background-image: none;
 }
+
 .start-here-ads img.size-full {
 	max-width: none;
 	float: left;
