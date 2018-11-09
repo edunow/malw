@@ -5,15 +5,17 @@ Theme Name: Responsive-Child
 
 Template: responsive
 
-Theme URI: http://cyberchimps.com/responsive-theme/
+Theme URI: http://www.makealivingwriting.com/wp-content/themes/responsive-child/
 
 Description: Responsive Theme is a flexible foundation with fluid grid system that adapts your website to mobile devices and the desktop or any other viewing environment. Theme features 9 Page Templates, 11 Widget Areas, 6 Template Layouts, 4 Menu Positions and more. Powerful but simple Theme Options for full CMS control with easy Logo Upload, Social Networking and Webmaster Tools etc. Responsive is WooCommerce Compatible, Multilingual Ready (WPML), RTL-Language Support, Retina-Ready, Search Engine Friendly, W3C Markup Validated and currently translated into 45 languages. Cross-Browser compatible. <a href="http://cyberchimps.com/forum/free/responsive/">Official support forum</a> (http://cyberchimps.com/forum/free/responsive/)
 
-Customized By: Gerard Greenidge and Keira Dooley
+Customized By: Gerard Greenidge
 
-Customizer URI: http://www.edunow.com and http://www.designbydooley.com
+Customizer URI: http://www.edunow.com
 
-Custom Version: 4
+Custom Version: 5
+
+Last updated: 2018-04-17
 
 Tags: white, black, gray, light, custom-menu, custom-header, custom-background, one-column, two-columns, left-sidebar, right-sidebar, theme-options, threaded-comments, full-width-template, sticky-post, translation-ready, rtl-language-support, responsive-layout, fluid-layout
 
@@ -23,15 +25,15 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Text Domain: responsive
 
-DEV.MAKEALIVINGWRITING.COM
+WWW.MAKEALIVINGWRITING.COM
 
 Responsive WordPress Theme, Copyright (C) 2003-2014 Emil Uzelac, CyberChimps Inc
 
 */
 
-@import url('https://www.google.com/fonts/specimen/Francois+One');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
-@import url('https://www.google.com/fonts/specimen/Kite+One');
+@import url("https://www.google.com/fonts/specimen/Francois+One");
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i';
+@import url("https://www.google.com/fonts/specimen/Kite+One");
 @import url('https://fonts.googleapis.com/css?family=Caveat:400,700');
 
 body {
@@ -40,9 +42,9 @@ body {
 	background: #ffffff;
 	color: #000000;
 	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-	font-size: 17px;
+	font-size: 14px;
 	font-smoothing: antialiased;
-	line-height: 1.4705882352941178em;
+	line-height: 1.6em;
 	text-rendering: optimizeLegibility;
 }
 
@@ -62,7 +64,7 @@ body {
 	margin: 20px auto 20px auto;
 	padding: 0 0px 20px 0;
 	position: relative;
-        max-width:1120px;
+	max-width:1120px;
 }
 
 #content {
@@ -86,29 +88,31 @@ body.home .col-620 { /*KD 10-12-15*/
 }
 
 p, hr, dl, pre, form, table, address, blockquote {
-	margin: 1em 0;
-}
-
-.post-meta {
-    clear: both;
-    margin-bottom: 10px;
-    color: #9f9f9f;
-    font-size: 0.7058823529411765em; /* 12px */
+	margin: 1.2em 0;
 }
 
 a, a:link {
 	color: #990000;
-	font-weight: inherit;
+	font-weight: normal;
 	text-decoration: underline;
 }
 
 a:hover {
-	font-weight: inherit;
+	font-weight: normal;
 	text-decoration: none;
 }
 
 a, a:visited {
 	color: #660000;
+}
+
+a.next, a.prev{
+background: #c12213; color: #fff; text-decoration: none; padding: 8px 8px; text-transform: uppercase; font-family: 'Francois One',Arial,Helvetica,sans-serif; font-size: 1.1em; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px;
+}
+
+a.page-numbers{
+	padding:0 5px;
+	text-decoration:none;
 }
 
 .alignright {
@@ -140,7 +144,7 @@ h2.pagetitle {
 
 h1, h1.entry-title.post-title {
 	font-family: 'Francois One', Arial, Helvetica, sans-serif;
-	font-size: 2.176470588235294em; /*used to be 2.2em */
+	font-size: 2.2em;
 	font-weight: normal;
 	color:#000;
 }
@@ -234,7 +238,7 @@ blockquote img.normalimage, #content blockquote img.normalimage {
 	border: 2px solid #55acee;
 	border-radius: 25px;
 	color: #55acee;
-	background: url('http://www.makealivingwriting.com/wp-content/uploads/tweetthisbkg.png')no-repeat left;
+	background: url('/wp-content/uploads/tweetthisbkg.png')no-repeat left;
 	background-position-x: 3px;
 	padding: 7px 7px 7px 39px;
 	text-decoration: none;
@@ -242,7 +246,7 @@ blockquote img.normalimage, #content blockquote img.normalimage {
 }
 
 .clicktweetbox-button a:hover {
-	background: #55acee url('http://www.makealivingwriting.com/wp-content/uploads/tweetthisbkg-hover.png')no-repeat left;
+	background: #55acee url('/wp-content/uploads/tweetthisbkg-hover.png')no-repeat left;
 	color: #fff;
 	text-decoration: none;
 }
@@ -283,11 +287,6 @@ div.podcastpreview h3 {
 
 -------------------------------------------------------------- */
 
-.main-nav {
-    clear: both;
-    background-color: black;
-}
-
 .menu {
 	background-color: #000000;
 	background-image:none;
@@ -296,23 +295,19 @@ div.podcastpreview h3 {
 	margin: 0 auto;
 	font-family: 'Francois One', Arial, Helvetica, sans-serif;
 	letter-spacing: -0.06em;
-        max-width:1120px;
-
 }
 
-
-
 .menu a {
-	border-left: 0;
+	border-left: 1px solid #333;
 	border-top: 10px solid #000;
 	border-bottom: 10px solid #000;
 	color: #ffffff;
 	cursor: pointer;
 	display: block;
-	font-size: 1em;
+	font-size: 1.25em;
 	font-weight: normal;
-	height: 1em;
-	line-height: 1em;
+	height: 23px;
+	line-height: 1.25em;
 	margin: 0;
 	padding: 0 0.7em;
 	position: relative;
@@ -340,8 +335,25 @@ li#menu-item-1588 a:hover { /* Writers Community */
 	color: #ffcc33;
 }
 
-.post-entry ol{
-	line-height:inherit;
+ul#menu-main-nav {
+    max-width: 840px;
+}
+
+ul.menu > li:hover {
+    background-color:#000;
+    color: #ffffff;
+}
+
+.main-nav {
+    clear: both;
+    max-width: 1080px;
+    margin: 0 auto;
+    background-color:#000;
+    background-image:none;
+}
+
+.menu .current_page_item a, .menu .current-menu-item a {
+    background-color: #000;
 }
 
 .entry ol li, .entry ul li {
@@ -398,7 +410,7 @@ li#menu-item-1588 a:hover { /* Writers Community */
 }
 
 #header {
-	background-color:#ffffff;
+	background-color:#000;
 }
 
 #headerimg {
@@ -408,6 +420,95 @@ li#menu-item-1588 a:hover { /* Writers Community */
 /* =HOMEPAGE SQUEEZE
 
 -------------------------------------------------------------- */
+.home #wrapper{
+    max-width:100%;
+}
+
+div#funnel-question {
+    background: url('/wp-content/uploads/handwriting-bkg-tile.png') repeat;
+    min-height: 443px;
+    max-width: 100%;
+    text-align:center;
+    margin: 0 0 -20px 0;
+    padding: 0 0 20px 0;
+}
+
+#funnel-question img {
+    width: 239px;
+    height: 237px;
+}
+
+#funnel-question h2 {
+    font-size: 60px;
+    line-height: 56px;
+    max-width: 740px;
+    margin: 0 auto;
+    padding: 40px 10px;
+}
+
+div#get-report  {
+    min-height: 237px;
+    background: url('/wp-content/uploads/shadow-teal-bkg.png') no-repeat center top #193E44;
+}
+
+div#get-report  .content{
+    min-height: 237px;
+    color: #fff;
+    text-align: center;
+    padding: 30px 270px;
+    margin: 0 auto;
+    max-width: 570px;
+    
+}
+
+#get-report p {
+    min-width: 267px;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 24px;
+    margin-top: 15px;
+    line-height: 29px;
+}
+
+#get-report img{
+    width:97px;
+    height:97px;
+    float:right;
+}
+.home .col-860 {
+    margin: 0 auto;
+    max-width:1120px;
+}
+
+.button_567x70 {
+    max-width: 570px;
+    margin: 0 auto;
+}
+
+.button_567x70 a {
+    display: block;
+    font-weight: 700;
+    padding: 7px 3px;
+    font-size: 24px;
+}
+
+.yellow-button a {
+    background-color: #FFD84F;
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: solid 1px #FFD84F;
+    text-align:center;
+    border-radius: 50px;
+}
+
+#get-report p.yellow-button {
+    line-height: 50px;
+    margin-top:35px;
+}
+
+
+
 
 div#mailistplug {
 	margin: 0;
@@ -620,24 +721,17 @@ a:hover.more-link {
 .post-entry {
 	clear: both;
 	font-size: 1.108em;
+	padding-right: 20px;
+    padding-left: 20px;
 }
 
 .post-entry h2 {
-	font-size: 1.8823529411764706em; /* 32px */
-	margin-bottom:0;
+	font-size: 1.6em;
 }
 
 .post-entry h3 {
-	font-size: 1.5294117647058822em; /* 29px */
-        font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-        font-weight:400;
-        margin-bottom:0;
-}
-
-.post-entry h4{
-       font-size: 1.4705882352941178em; /* 25px */
-       font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-       font-weight:600;
+	font-size: 1.4em;
+        line-height: 1.25em;
 }
 
 .page #pings, .page #comments, .page .commentlist {
@@ -709,12 +803,6 @@ input#mce-EMAIL, input#mce-FNAME, input#mce-LNAME {
     margin:0;
 }
 
-.page-template-no-margin-page-no-title #wrapper {
-    max-width: 100%;
-    padding: 0;
-    margin: 0;
-}
-
 .page-template-no-margin-page-no-title #header {
     background-color: #000;
 }
@@ -726,7 +814,58 @@ input#mce-EMAIL, input#mce-FNAME, input#mce-LNAME {
     max-width: 1120px;
 }
 
+.page-template-landing-page #wrapper {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    background-color: #ffffff;
+    border: 0;
+    border-radius: 4px;
+    clear: both;
+    margin: 20px auto 20px auto;
+    padding: 0 0px 20px 0;
+    position: relative;
+    max-width: 100%;
+}
 
+.page-template-landing-page #wrapper .post-title {
+    display: none;
+}
+
+.page-template-landing-page #mobilelogo {
+    display: block;
+    background-color: #fff;
+    text-align: center;
+}
+
+.page-template-landing-page #logo {
+    display: none;
+}
+
+.page-template-landing-page .post-edit {
+    display: none;
+    clear: both;
+}
+
+.page-template-landing-page #content-full {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.page-template-landing-page #footer {
+    clear: both;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 0 25px 0 25px;
+    font-size: .9em;
+    line-height: 1.5em;
+    background: #000;
+    color: #fff;
+    min-height: 140px;
+}
+
+.page-template-landing-page #header {
+    background-color: #fff;
+}
 
 /**** End No Margin Template ****/
 
@@ -743,8 +882,6 @@ input#mce-EMAIL, input#mce-FNAME, input#mce-LNAME {
     margin: 0 auto;
     max-width: 1120px;
 }
-
-
 
 .start-here-intro h2 {
     color: #fff;
@@ -900,6 +1037,7 @@ li.rpwe-li {
     width: 350px;
     float: left;
     border-bottom: none !important;
+    height:300px;
 }
 
 .rpwe-block a {
@@ -913,7 +1051,7 @@ li.rpwe-li {
 }
 .rpwe-block h3 a {
     color: #000;
-    font-family: 'Open Sans', Arial, sans-serif;
+    font-family: 'Open Sans', Arial, sans-serif;	
 }
 
 .start-here-related-products {
@@ -974,6 +1112,39 @@ li.rpwe-li {
     margin: 20px 20px 0px 0;
 }
 
+/*** Start Here Better Clients ***/
+
+.start-here-better-clients-head {
+    background-image: url('/wp-content/uploads/GetBetterFreelanceClients-bannerbkg.jpg');
+    background-position: center;
+    min-height: 428px;
+    background-repeat: no-repeat;
+    background-color: #CC9900;
+}
+
+.start-here-better-clients-head .start-here-rec-links ul {
+    margin: 0;
+    padding-bottom: 0px;
+}
+
+
+.start-here-better-clients-head .start-here-rec-links {
+    padding: 10px 10px 0 10px;
+    margin: 20px 20px 0px 0;
+}
+
+.start-here-den2x-plug{
+    background-image: url('/wp-content/uploads/money-bkg.jpg');
+    background-position: center;
+    min-height: 428px;
+    background-repeat: no-repeat;
+    background-color: #CC9900;  
+    
+}
+
+
+
+/*** End Start Here Landing Pages ***/
 
 /***** Mentoring Section *****/
 
@@ -1011,35 +1182,11 @@ li.rpwe-li {
     text-align: center;
 }
 
-
-.mentor-den2x .black-lined-button {
-    border: 1px solid black;
-    max-width: 263px;
-    height: 48px;
-    padding: 25px 0 0 0;
-    margin: 0px auto;
-}
-
-.mentor-den2x .black-lined-button a{
-    text-decoration: none;
-    color: black;
-    padding:23px 30px;
-    max-width: 263px;
-}
-
-/*.mentor-den .black-lined-button {
-    border: 1px solid black;
-    max-width: 310px;
-    height: 48px;
-    padding: 25px 0 0 0;
-    margin: 0px auto;
-}*/
-
 .mentor-den .black-lined-button {
     border: 1px solid black;
-    max-width: 184px;
-    height: 50px;
-    padding: 25px 0 0 0;
+    max-width: 194px;
+    min-height: 48px;
+    padding: 0;
     margin: 0px auto;
 }
 
@@ -1048,9 +1195,25 @@ li.rpwe-li {
     text-decoration: none;
     color: black;
     max-width: 184px;
-    
+    display:block;    
 }
 
+
+.mentor-den2x .black-lined-button {
+    border: 1px solid black;
+    max-width: 280px;
+    min-height: 48px;
+    padding: 0;
+    margin: 0px auto;
+}
+
+.mentor-den2x .black-lined-button a{
+    text-decoration: none;
+    color: black;
+    padding:23px 30px;
+    max-width: 263px;
+    display:block;
+}
 
 .mentor-2x-triple {
     background-color: #0E2F55;
@@ -1075,8 +1238,8 @@ li.rpwe-li {
 .mentor-2x-triple .white-lined-button {
     border: 1px solid white;
     max-width: 420px;
-    height: 40px;
-    padding: 17px 0 0 0;
+    min-height: 40px;
+    padding: 0;
     margin: 0px auto;
 }
 
@@ -1084,7 +1247,8 @@ li.rpwe-li {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    /*padding: 18px 68px;*/
+    display:block;
+    padding:20px;
 }
 
 
@@ -1111,15 +1275,16 @@ li.rpwe-li {
 
 .mentor-new-freelance-writers .black-lined-button {
     border: 1px solid black;
-    max-width: 300px;
-    height: 50px;
-    padding: 25px 0 0 0;
+    max-width: 310px;
+    min-height: 50px;
+    padding: 0;
 }
 
 .mentor-new-freelance-writers .black-lined-button a{
     padding: 23px 76px;
     text-decoration: none;
     color: black;
+    display:block;
 }
 
 
@@ -1156,16 +1321,17 @@ li.rpwe-li {
 
 .mentor-sbbi .black-lined-button {
     border: 1px solid black;
-    max-width: 300px;
+    max-width: 370px;
     margin: 0px auto;
-    height: 50px;
-    padding: 25px 0 0 0;
+    min-height: 50px;
+    padding: 0;
 }
 
 .mentor-sbbi .black-lined-button a{
     text-decoration: none;
     color: black;
     padding:27px 81px;
+    display:block;
 }
 
 .mentor-sbbi .black-lined-button a:hover{
@@ -1227,22 +1393,22 @@ li.rpwe-li {
 
 .mentor-unsure-band .black-lined-button {
     border: 1px solid black;
-    max-width: 250px;
+    max-width: 270px;
     margin: 0px auto;
     height: 70px;
-    padding: 0 0 0 0;
+    padding: 0;
 }
 
-.mentor-unsure-band a {
+.mentor-unsure-band .black-lined-button a {
     text-decoration: none;
     color: black;
     font-size: 18px;
     font-weight: bold;
     display: block;
-    padding: 13px 0;
+    padding: 13px 20px;
 }
 
-.mentor-unsure-band a:hover {
+.mentor-unsure-band .black-lined-button a:hover {
     color:white;
     background-color: black;
 }
@@ -1267,15 +1433,14 @@ li.rpwe-li {
 }
 */
 
-.comments-link {
-    font-size: 100%;
-}
-
-
 /*** Media View Ports ****/
 
 @media screen and (max-width: 800px) {
 body {
+}
+
+div#get-report .content {
+    padding: 30px;
 }
 
 #logo {
@@ -1307,7 +1472,6 @@ body.home .col-620 { /*KD Edit 10-12-15*/
 .start-here-rec-links {
     padding: 0;
 }
-
 
 .grid, .grid-right {
 	float: none;
@@ -1466,7 +1630,7 @@ body.home .col-620 { /*KD Edit 10-12-15*/
     margin: 0 auto;
 }
 
-.mentor-head {
+.mentor-head, .start-here-better-clients-head {
     background-image: none;
 }
 
@@ -1497,7 +1661,6 @@ body.home .col-620 { /*KD Edit 10-12-15*/
     padding: 0;
     margin: 0px auto;
 }
-
 
 }
 
@@ -1536,6 +1699,13 @@ li.rpwe-li {
     padding: 10px 0 10px 0;
 }
 
+h1, h1.entry-title.post-title {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+
 }
 @media only screen and (max-width : 600px) {
 /* Styles */
@@ -1551,6 +1721,13 @@ li.rpwe-li {
 #logo {
 	display:block;
 }
+
+#get-report img{
+    width:200px;
+    height:200px;
+    float:none;
+}
+
 }
 
 /* Smartphones (portrait and landscape) ----------- */
@@ -1599,11 +1776,18 @@ li.rpwe-li {
 	display:block;
 	text-align:center;
 	background: #fff;
+	padding-left: 20px;
+    padding-right: 20px;
 }
 
 #logo {
 	display:none;
 }
+
+div#get-report p{
+    text-align: center;
+}
+
 }
 
 /* Smartphones (landscape) ----------- */
@@ -1619,7 +1803,10 @@ li.rpwe-li {
 #mobilelogo {
 	display:block;
 	text-align:center;
+	padding-left: 20px;
+    padding-right: 20px;
 }
+
 #logo {
 	display:none;
 }
@@ -1665,6 +1852,8 @@ li.rpwe-li {
 #mobilelogo {
 	display:block;
 	text-align:center;
+	padding-left: 20px;
+    padding-right: 20px;
 }
 
 #logo {
@@ -1687,6 +1876,12 @@ li.rpwe-li {
 #logo {
 	display:block;
 }
+
+.rpwe-block {
+    max-width: 375px;
+    margin: 0 auto;
+}
+
 }
 
 /* iPads (landscape) ----------- (min-device-width : 768px)  */
@@ -1704,12 +1899,6 @@ li.rpwe-li {
 #logo {
 	display:block;
 }
-
-.rpwe-block {
-    max-width: 375px;
-    margin: 0 auto;
-}
-
 }
 
 /* iPads (portrait) ----------- */
@@ -1736,6 +1925,12 @@ li.rpwe-li {
 #logo {
 	display:block;
 }
+
+.rpwe-block {
+    max-width: 375px;
+    margin: 0 auto;
+}
+
 }
 
 /* Desktops and laptops ----------- */
@@ -1785,6 +1980,9 @@ li.rpwe-li {
 #mobilelogo {
 	display:block;
 	text-align:center;
+	padding-left: 20px;
+    padding-right: 20px;
+}
 }
 
 #logo {
@@ -1883,6 +2081,8 @@ li.rpwe-li {
 #logo {
 	display:none;
 }
+
+
 }
 
 /* Desktops and laptops ----------- */
@@ -1927,12 +2127,13 @@ li.rpwe-li {
 	display:block;
 	text-align:center;
 	background: #fff;
+	padding-left: 20px;
+    padding-right: 20px;
 }
 
 #logo {
 	display:none;
 }
-
 .start-here-head {
     background-image: none;
 }
@@ -1940,7 +2141,6 @@ li.rpwe-li {
 .start-here-sign-up {
 	background-image: none;
 }
-
 .start-here-ads img.size-full {
 	max-width: none;
 	float: left;
@@ -1961,6 +2161,16 @@ li.rpwe-li {
 	margin: 0;
 	padding: 30px 0;
 }
+
+.post-meta {
+    clear: both;
+    color: #7E7E7E;
+    font-size: 12px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
 }
 
 /* CSS Document */
