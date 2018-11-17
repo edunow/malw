@@ -5,7 +5,7 @@ Theme Name: Responsive-Child
 
 Template: responsive
 
-Theme URI: http://www.makealivingwriting.com/wp-content/themes/responsive-child/
+Theme URI: http://stage.makealivingwriting.com/wp-content/themes/responsive-child/
 
 Description: Responsive Theme is a flexible foundation with fluid grid system that adapts your website to mobile devices and the desktop or any other viewing environment. Theme features 9 Page Templates, 11 Widget Areas, 6 Template Layouts, 4 Menu Positions and more. Powerful but simple Theme Options for full CMS control with easy Logo Upload, Social Networking and Webmaster Tools etc. Responsive is WooCommerce Compatible, Multilingual Ready (WPML), RTL-Language Support, Retina-Ready, Search Engine Friendly, W3C Markup Validated and currently translated into 45 languages. Cross-Browser compatible. <a href="http://cyberchimps.com/forum/free/responsive/">Official support forum</a> (http://cyberchimps.com/forum/free/responsive/)
 
@@ -13,9 +13,9 @@ Customized By: Gerard Greenidge
 
 Customizer URI: http://www.edunow.com
 
-Custom Version: 5
+Custom Version: 8
 
-Last updated: 2018-04-17
+Last updated: 2018-11-14
 
 Tags: white, black, gray, light, custom-menu, custom-header, custom-background, one-column, two-columns, left-sidebar, right-sidebar, theme-options, threaded-comments, full-width-template, sticky-post, translation-ready, rtl-language-support, responsive-layout, fluid-layout
 
@@ -25,7 +25,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Text Domain: responsive
 
-WWW.MAKEALIVINGWRITING.COM
+STAGE.MAKEALIVINGWRITING.COM
 
 Responsive WordPress Theme, Copyright (C) 2003-2014 Emil Uzelac, CyberChimps Inc
 
@@ -65,19 +65,6 @@ body {
 	padding: 0 0px 20px 0;
 	position: relative;
 	max-width:1120px;
-}
-
-.page-template-no-margin-page-no-title #wrapper {
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    background-color: #ffffff;
-    border: 0;
-    border-radius: 4px;
-    clear: both;
-    margin: 0 auto;
-    padding: 0;
-    position: relative;
-    max-width: 100%;
 }
 
 #content {
@@ -251,7 +238,7 @@ blockquote img.normalimage, #content blockquote img.normalimage {
 	border: 2px solid #55acee;
 	border-radius: 25px;
 	color: #55acee;
-	background: url('http://www.makealivingwriting.com/wp-content/uploads/tweetthisbkg.png')no-repeat left;
+	background: url('/wp-content/uploads/tweetthisbkg.png')no-repeat left;
 	background-position-x: 3px;
 	padding: 7px 7px 7px 39px;
 	text-decoration: none;
@@ -259,7 +246,7 @@ blockquote img.normalimage, #content blockquote img.normalimage {
 }
 
 .clicktweetbox-button a:hover {
-	background: #55acee url('http://www.makealivingwriting.com/wp-content/uploads/tweetthisbkg-hover.png')no-repeat left;
+	background: #55acee url('/wp-content/uploads/tweetthisbkg-hover.png')no-repeat left;
 	color: #fff;
 	text-decoration: none;
 }
@@ -349,13 +336,20 @@ li#menu-item-1588 a:hover { /* Writers Community */
 }
 
 ul#menu-main-nav {
-    max-width: 1120px;
+    max-width: 840px;
+}
+
+ul.menu > li:hover {
+    background-color:#000;
+    color: #ffffff;
 }
 
 .main-nav {
     clear: both;
     max-width: 1080px;
     margin: 0 auto;
+    background-color:#000;
+    background-image:none;
 }
 
 .menu .current_page_item a, .menu .current-menu-item a {
@@ -426,9 +420,8 @@ ul#menu-main-nav {
 /* =HOMEPAGE SQUEEZE
 
 -------------------------------------------------------------- */
-
-.home #wrapper {
-    max-width: 100%;
+.home #wrapper{
+    max-width:100%;
 }
 
 div#funnel-question {
@@ -436,8 +429,8 @@ div#funnel-question {
     min-height: 443px;
     max-width: 100%;
     text-align:center;
-    padding: 20px 0;
     margin: 0 0 -20px 0;
+    padding: 0 0 20px 0;
 }
 
 #funnel-question img {
@@ -513,6 +506,7 @@ div#get-report  .content{
     line-height: 50px;
     margin-top:35px;
 }
+
 
 
 
@@ -741,6 +735,14 @@ a:hover.more-link {
 .page #pings, .page #comments, .page .commentlist {
 	display: none;
 }
+
+
+#content-full h1, #content-full h1.entry-title.post-title, #content-full .post-entry {
+    padding-left:50px;
+    padding-right:50px;
+}
+
+
 /* =MAILCHIMP FORMS
 
 -------------------------------------------------------------- */
@@ -825,8 +827,8 @@ input#mce-EMAIL, input#mce-FNAME, input#mce-LNAME {
     border: 0;
     border-radius: 4px;
     clear: both;
-    margin: 0px auto;
-    padding: 0px;
+    margin: 20px auto 20px auto;
+    padding: 0 0px 20px 0;
     position: relative;
     max-width: 100%;
 }
@@ -839,8 +841,6 @@ input#mce-EMAIL, input#mce-FNAME, input#mce-LNAME {
     display: block;
     background-color: #fff;
     text-align: center;
-    max-width: 250px;
-    margin: 0 auto;
 }
 
 .page-template-landing-page #logo {
@@ -1450,9 +1450,15 @@ div#get-report .content {
 }
 
 #logo {
-	float: none;
-	margin: 0;
-	text-align: center;
+	display: none;
+}
+
+#mobilelogo {
+	display:block;
+	text-align:center;
+	background: #fff;
+	padding-left: 20px;
+    padding-right: 20px;
 }
 
 .mailistplug-video {
@@ -1705,6 +1711,13 @@ li.rpwe-li {
     padding: 10px 0 10px 0;
 }
 
+h1, h1.entry-title.post-title {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+
 }
 @media only screen and (max-width : 600px) {
 /* Styles */
@@ -1775,6 +1788,8 @@ li.rpwe-li {
 	display:block;
 	text-align:center;
 	background: #fff;
+	padding-left: 20px;
+    padding-right: 20px;
 }
 
 #logo {
@@ -1784,6 +1799,7 @@ li.rpwe-li {
 div#get-report p{
     text-align: center;
 }
+
 }
 
 /* Smartphones (landscape) ----------- */
@@ -1799,7 +1815,10 @@ div#get-report p{
 #mobilelogo {
 	display:block;
 	text-align:center;
+	padding-left: 20px;
+    padding-right: 20px;
 }
+
 #logo {
 	display:none;
 }
@@ -1845,6 +1864,8 @@ div#get-report p{
 #mobilelogo {
 	display:block;
 	text-align:center;
+	padding-left: 20px;
+    padding-right: 20px;
 }
 
 #logo {
@@ -1871,6 +1892,20 @@ div#get-report p{
 .rpwe-block {
     max-width: 375px;
     margin: 0 auto;
+}
+
+.post-entry {
+	padding-right: 50px;
+    padding-left: 50px;
+}
+
+.post-meta {
+    clear: both;
+    color: #7E7E7E;
+    font-size: 12px;
+    margin-bottom: 10px;
+    margin-right: 50px;
+    margin-left: 50px;
 }
 
 }
@@ -1925,7 +1960,7 @@ div#get-report p{
 }
 
 /* Desktops and laptops ----------- */
-@media only screen and (min-width : 1224px) {
+@media only screen and (min-width : 1024px) {
 /* Styles */
 
 #mobilelogo {
@@ -1959,11 +1994,7 @@ div#get-report p{
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 /* Styles */
 
-div#get-report .content {
-    padding: 30px;
-}
-
-	#menu_container {
+#menu_container {
 	max-width: 100%;
 	margin: 0 auto;
 	background: #333;
@@ -1975,6 +2006,8 @@ div#get-report .content {
 #mobilelogo {
 	display:block;
 	text-align:center;
+	padding-left: 20px;
+    padding-right: 20px;
 }
 
 #logo {
@@ -2038,6 +2071,10 @@ div#get-report .content {
 #logo {
 	display:block;
 }
+
+
+
+
 }
 
 /* iPads (landscape) ----------- */
@@ -2078,7 +2115,7 @@ div#get-report .content {
 }
 
 /* Desktops and laptops ----------- */
-@media only screen and (min-width : 1224px) {
+@media only screen and (min-width : 1024px) {
 /* Styles */
 
 #mobilelogo {
@@ -2119,6 +2156,8 @@ div#get-report .content {
 	display:block;
 	text-align:center;
 	background: #fff;
+	padding-left: 20px;
+    padding-right: 20px;
 }
 
 #logo {
@@ -2151,6 +2190,21 @@ div#get-report .content {
 	margin: 0;
 	padding: 30px 0;
 }
+
+.post-entry {
+	padding-right: 50px;
+    padding-left: 50px;
+}
+
+.post-meta {
+    clear: both;
+    color: #7E7E7E;
+    font-size: 12px;
+    margin-bottom: 10px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
 }
 
 /* CSS Document */
