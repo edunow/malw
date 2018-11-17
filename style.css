@@ -5,7 +5,7 @@ Theme Name: Responsive-Child
 
 Template: responsive
 
-Theme URI: http://www.makealivingwriting.com/wp-content/themes/responsive-child/
+Theme URI: http://stage.makealivingwriting.com/wp-content/themes/responsive-child/
 
 Description: Responsive Theme is a flexible foundation with fluid grid system that adapts your website to mobile devices and the desktop or any other viewing environment. Theme features 9 Page Templates, 11 Widget Areas, 6 Template Layouts, 4 Menu Positions and more. Powerful but simple Theme Options for full CMS control with easy Logo Upload, Social Networking and Webmaster Tools etc. Responsive is WooCommerce Compatible, Multilingual Ready (WPML), RTL-Language Support, Retina-Ready, Search Engine Friendly, W3C Markup Validated and currently translated into 45 languages. Cross-Browser compatible. <a href="http://cyberchimps.com/forum/free/responsive/">Official support forum</a> (http://cyberchimps.com/forum/free/responsive/)
 
@@ -13,9 +13,9 @@ Customized By: Gerard Greenidge
 
 Customizer URI: http://www.edunow.com
 
-Custom Version: 5
+Custom Version: 8
 
-Last updated: 2018-04-17
+Last updated: 2018-11-14
 
 Tags: white, black, gray, light, custom-menu, custom-header, custom-background, one-column, two-columns, left-sidebar, right-sidebar, theme-options, threaded-comments, full-width-template, sticky-post, translation-ready, rtl-language-support, responsive-layout, fluid-layout
 
@@ -25,7 +25,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Text Domain: responsive
 
-WWW.MAKEALIVINGWRITING.COM
+STAGE.MAKEALIVINGWRITING.COM
 
 Responsive WordPress Theme, Copyright (C) 2003-2014 Emil Uzelac, CyberChimps Inc
 
@@ -721,8 +721,6 @@ a:hover.more-link {
 .post-entry {
 	clear: both;
 	font-size: 1.108em;
-	padding-right: 20px;
-    padding-left: 20px;
 }
 
 .post-entry h2 {
@@ -737,6 +735,14 @@ a:hover.more-link {
 .page #pings, .page #comments, .page .commentlist {
 	display: none;
 }
+
+
+#content-full h1, #content-full h1.entry-title.post-title, #content-full .post-entry {
+    padding-left:50px;
+    padding-right:50px;
+}
+
+
 /* =MAILCHIMP FORMS
 
 -------------------------------------------------------------- */
@@ -1444,9 +1450,15 @@ div#get-report .content {
 }
 
 #logo {
-	float: none;
-	margin: 0;
-	text-align: center;
+	display: none;
+}
+
+#mobilelogo {
+	display:block;
+	text-align:center;
+	background: #fff;
+	padding-left: 20px;
+    padding-right: 20px;
 }
 
 .mailistplug-video {
@@ -1700,8 +1712,8 @@ li.rpwe-li {
 }
 
 h1, h1.entry-title.post-title {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 
@@ -1882,6 +1894,20 @@ div#get-report p{
     margin: 0 auto;
 }
 
+.post-entry {
+	padding-right: 50px;
+    padding-left: 50px;
+}
+
+.post-meta {
+    clear: both;
+    color: #7E7E7E;
+    font-size: 12px;
+    margin-bottom: 10px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
 }
 
 /* iPads (landscape) ----------- (min-device-width : 768px)  */
@@ -1934,7 +1960,7 @@ div#get-report p{
 }
 
 /* Desktops and laptops ----------- */
-@media only screen and (min-width : 1224px) {
+@media only screen and (min-width : 1024px) {
 /* Styles */
 
 #mobilelogo {
@@ -1968,7 +1994,7 @@ div#get-report p{
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 /* Styles */
 
-	#menu_container {
+#menu_container {
 	max-width: 100%;
 	margin: 0 auto;
 	background: #333;
@@ -1982,7 +2008,6 @@ div#get-report p{
 	text-align:center;
 	padding-left: 20px;
     padding-right: 20px;
-}
 }
 
 #logo {
@@ -2046,6 +2071,10 @@ div#get-report p{
 #logo {
 	display:block;
 }
+
+
+
+
 }
 
 /* iPads (landscape) ----------- */
@@ -2086,7 +2115,7 @@ div#get-report p{
 }
 
 /* Desktops and laptops ----------- */
-@media only screen and (min-width : 1224px) {
+@media only screen and (min-width : 1024px) {
 /* Styles */
 
 #mobilelogo {
@@ -2162,13 +2191,18 @@ div#get-report p{
 	padding: 30px 0;
 }
 
+.post-entry {
+	padding-right: 50px;
+    padding-left: 50px;
+}
+
 .post-meta {
     clear: both;
     color: #7E7E7E;
     font-size: 12px;
     margin-bottom: 10px;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
 }
 
 }
